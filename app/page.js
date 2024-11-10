@@ -14,8 +14,8 @@ export default function Home() {
       <section className="py-2 bg-white">
         <Figures/>
         <About/>
+        <WhyUs />
       </section>
-      <WhyUs/>
       <FaqSection/>
     </>
   );
