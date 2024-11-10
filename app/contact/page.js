@@ -30,11 +30,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-black py-16 px-6 md:px-36">
+    <section className="bg-white py-16 px-6 md:px-36">
       {/* Heading Section */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-blue-500">Get in touch</h2>
-        <p className="mt-2 text-white text-md max-w-lg mx-auto">
+        <p className="mt-2 text-black text-md max-w-lg mx-auto">
           Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
         </p>
       </div>
@@ -62,17 +62,17 @@ const Contact = () => {
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-blue-500">Connect with us</h3>
             <div className="flex space-x-4 mt-4">
-              <SocialIcon icon={<FaWhatsapp size={20} />} link="https://wa.me/6289000014" hoverColor="green-600" />
-              <SocialIcon icon={<SiGmail size={20} />} link="mailto:vyaparguruinfotech@gmail.com" hoverColor="red-500" />
-              <SocialIcon icon={<FaInstagram size={20} />} link="https://instagram.com/vyaparguru" hoverColor="pink-500" />
-              <SocialIcon icon={<FaLinkedinIn size={20} />} link="https://linkedin.com/in/vyaparguru" hoverColor="blue-500" />
+              <SocialIcon icon={<FaWhatsapp size={20} />} link="https://wa.me/6289000014" />
+              <SocialIcon icon={<SiGmail size={20} />} link="mailto:vyaparguruinfotech@gmail.com" />
+              <SocialIcon icon={<FaInstagram size={20} />} link="https://instagram.com/vyaparguru" />
+              <SocialIcon icon={<FaLinkedinIn size={20} />} link="https://linkedin.com/in/vyaparguru" />
             </div>
           </div>
         </div>
 
         {/* Right Section: Contact Form */}
         <div className="flex-1 flex items-start justify-center">
-          <div className="p-8 px-8 md:px-14 bg-black border-2 border-blue-500 w-full max-w-md">
+          <div className="p-8 px-8 md:px-14 bg-blue-500 border-2 rounded-md border-blue-500 w-full max-w-md">
             <h3 className="text-2xl font-bold text-white mb-6 text-left">SEND MESSAGE</h3>
 
             <form onSubmit={handleSubmit}>
@@ -98,7 +98,7 @@ const Contact = () => {
                 />
               <button
                 type="submit"
-                className="bg-blue-500 py-2 px-16 border-2 border-blue-500 text-white font-bold mt-4 transition duration-300"
+                className="bg-white py-2 px-16 border-2 border-blue-500 text-black font-bold mt-4 transition duration-300"
                 >
                 Send
               </button>
@@ -116,15 +116,15 @@ const ContactDetail = ({ icon, title, detail }) => (
     <div className="text-white text-2xl border-2 border-blue-500 p-4 rounded-full">{icon}</div>
     <div>
       <h4 className="text-lg font-semibold text-blue-500">{title}</h4>
-      <p className="text-white">{detail}</p>
+      <p className="text-black">{detail}</p>
     </div>
   </div>
 );
 
-const SocialIcon = ({ icon, link, hoverColor }) => (
+const SocialIcon = ({ icon, link }) => (
   <a
     href={link}
-    className={`text-2xl text-white p-1 rounded-full transition duration-300 hover:text-${hoverColor}`}
+    className="text-2xl text-black p-1 rounded-full transition duration-300"
   >
     {icon}
   </a>
@@ -139,7 +139,7 @@ const AnimatedInput = ({ label, type, name, value, onChange }) => (
       value={value}
       onChange={onChange}
       placeholder=" "
-      className="w-full p-2 bg-black border-b-2 border-blue-500 text-white outline-none transition-all duration-300 autofill:bg-black"
+      className="w-full p-2 bg-blue-500 border-b-2 border-white text-white outline-none transition-all duration-300 autofill:bg-black"
       autoComplete="off"
       required
     />
@@ -164,8 +164,8 @@ const AnimatedTextarea = ({ label, name, value, onChange }) => (
       value={value}
       onChange={onChange}
       placeholder=" "
-      rows="4"
-      className="w-full p-2 bg-black border-b-2 border-blue-500 text-white outline-none transition-all duration-300 autofill:bg-black"
+      rows="3"
+      className="w-full p-2 bg-blue-500 border-b-2 border-white text-white outline-none transition-all duration-300 autofill:bg-black"
       autoComplete="off"
       required
     ></textarea>

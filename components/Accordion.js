@@ -31,12 +31,12 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="bg-black py-16 px-4 md:px-8 lg:px-16">
+    <section className="bg-white py-16 px-4 md:px-8 lg:px-16">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-blue-500">
           Frequently Asked Questions
         </h2>
-        <p className="mt-2 text-white max-w-2xl mx-auto">
+        <p className="mt-2 text-black max-w-2xl mx-auto">
           Find answers to some of the common questions about our services.
         </p>
       </div>

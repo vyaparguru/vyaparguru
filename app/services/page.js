@@ -33,13 +33,13 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-black py-16 px-4 md:px-8 lg:px-32">
+    <section className="bg-white py-16 px-4 md:px-8 lg:px-32">
       {/* Page Heading */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-blue-500">
           Our Services
         </h2>
-        <p className="mt-2 text-white max-w-2xl mx-auto">
+        <p className="mt-2 text-black max-w-2xl mx-auto">
           Explore the range of professional services we offer to take your business to the next level.
         </p>
       </div>
@@ -49,12 +49,12 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-black border-2 border-blue-500 p-6 shadow-lg flex flex-col items-center text-center"
+            className="bg-blue-500 border-2 border-blue-500 p-6 shadow-lg flex flex-col items-center text-center"
           >
             <div className="bg-blue-100 p-4 rounded-full text-blue-500 text-4xl mb-4">
               {service.icon}
             </div>
-            <h3 className="text-2xl font-semibold text-blue-500 mb-2">
+            <h3 className="text-2xl font-semibold text-white mb-2">
               {service.title}
             </h3>
             <p className="text-white text-sm">

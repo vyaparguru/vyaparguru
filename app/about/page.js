@@ -7,11 +7,11 @@ import aboutImage2 from "../../assets/banner2.jpg"; // Replace with actual image
 
 const About = () => {
   return (
-    <section className="bg-black px-4 py-20 md:px-8 w-full">
+    <section className="bg-white px-4 py-20 md:px-8 w-full">
       {/* Main Heading */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-blue-500">About Vyapar Guru</h1>
-        <p className="mt-4 text-md text-white">
+        <p className="mt-4 text-md text-black">
           Empowering businesses with innovative solutions and impactful strategies. Empowering businesses with innovative solutions and impactful strategies. 
         </p>
       </div>
@@ -27,7 +27,7 @@ const About = () => {
           />
         <div className="md:w-1/2 text-center md:text-left space-y-4 ">
           <h2 className="text-3xl font-semibold text-blue-500">Who We Are?</h2>
-          <p className="text-white text-md">
+          <p className="text-black text-md">
             Vyapar is committed to bringing transformation through innovation and dedicated service. 
             Our team works collaboratively with partners and clients to create efficient, 
             result-oriented solutions tailored to meet evolving market demands. Our mission is to empower businesses by providing strategic insights and practical solutions 
@@ -51,7 +51,7 @@ const About = () => {
         />
         <div className="md:w-1/2 text-center md:text-left space-y-4 ">
           <h2 className="text-3xl font-semibold text-blue-500">Our Mission</h2>
-          <p className="text-white text-md pr-0 md:pr-5">
+          <p className="text-black text-md pr-0 md:pr-5">
             Our mission is to empower businesses by providing strategic insights and practical solutions 
             that drive measurable results. We aim to be a catalyst in the journey of achieving growth 
             and sustainability for every client. Our mission is to empower businesses by providing strategic insights 

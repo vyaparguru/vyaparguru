@@ -27,30 +27,30 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-black shadow border-b">
+    <header className="bg-white shadow border-b">
       <div className="container mx-auto flex items-center justify-between px-4 md:px-8 py-4">
         <Link href="/">
           <Image src={logo} alt="logo" width={60} height={10} />
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex space-x-7 text-white uppercase font-medium">
-          <Link href="/" className={`${pathname === "/" ? "text-blue-500 font-medium" : ""}`}>
+        <nav className="hidden md:flex space-x-7 text-black uppercase font-medium">
+          <Link href="/" className={`${pathname === "/" ? "text-blue-500 font-bold" : ""}`}>
             Home
           </Link>
-          <Link href="/about" className={`${pathname === "/about" ? "text-blue-500 font-medium" : ""}`}>
+          <Link href="/about" className={`${pathname === "/about" ? "text-blue-500 font-bold" : ""}`}>
             About Us
           </Link>
-          <Link href="/services" className={`${pathname === "/services" ? "text-blue-500 font-medium" : ""}`}>
+          <Link href="/services" className={`${pathname === "/services" ? "text-blue-500 font-bold" : ""}`}>
             Our Services
           </Link>
-          <Link href="/why-us" className={`${pathname === "/why-us" ? "text-blue-500 font-medium" : ""}`}>
+          <Link href="/why-us" className={`${pathname === "/why-us" ? "text-blue-500 font-bold" : ""}`}>
             Why Us
           </Link>
-          <Link href="/portfolio" className={`${pathname === "/portfolio" ? "text-blue-500 font-medium" : ""}`}>
+          <Link href="/portfolio" className={`${pathname === "/portfolio" ? "text-blue-500 font-bold" : ""}`}>
             Portfolio
           </Link>
-          <Link href="/contact" className={`${pathname === "/contact" ? "text-blue-500 font-medium" : ""}`}>
+          <Link href="/contact" className={`${pathname === "/contact" ? "text-blue-500 font-bold" : ""}`}>
             Contact
           </Link>
         </nav>
@@ -58,9 +58,9 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button className="md:hidden z-50" onClick={() => setMenuOpen(!menuOpen)}>
           <motion.div animate={menuOpen ? "open" : "closed"} className="space-y-1">
-            <motion.span className="block w-6 h-0.5 bg-white" variants={lineVariants} />
-            <motion.span className="block w-6 h-0.5 bg-white" variants={lineVariants2} />
-            <motion.span className="block w-6 h-0.5 bg-white" variants={lineVariants3} />
+            <motion.span className="block w-6 h-0.5 bg-black" variants={lineVariants} />
+            <motion.span className="block w-6 h-0.5 bg-black" variants={lineVariants2} />
+            <motion.span className="block w-6 h-0.5 bg-black" variants={lineVariants3} />
           </motion.div>
         </button>
 
@@ -70,7 +70,7 @@ const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white z-40"
+            className="fixed inset-0 bg-white bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-black z-40"
           >
             {/* Logo in Overlay */}
             <Link href="/" className="absolute top-4 left-4 flex items-center">

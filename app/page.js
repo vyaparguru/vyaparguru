@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section className="py-2 bg-black">
+      <section className="py-2 bg-white">
         <Figures/>
         <About/>
       </section>

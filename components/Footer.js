@@ -8,14 +8,14 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-blue-700 text-black py-8">
       <div className="container mx-auto px-5 md:px-20">
         <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
           
           {/* Quick Links */}
           <div className="text-left space-y-2">
-            <h3 className="text-lg font-semibold text-blue-500">Quick Links</h3>
-            <ul className="space-y-1">
+            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+            <ul className="space-y-1 text-white">
               <Link className="hover:underline" href="/about"><li>About Us</li></Link>
               <Link className="hover:underline" href="/why-us"><li>Why Us</li></Link>
               <Link className="hover:underline" href="/services"><li>Services</li></Link>
@@ -26,8 +26,8 @@ export default function Footer() {
           
           {/* Services We Offer */}
           <div className="text-left space-y-2">
-            <h3 className="text-lg font-semibold text-blue-500">Services We Offer</h3>
-            <ul className="space-y-1">
+            <h3 className="text-lg font-semibold text-white">Services We Offer</h3>
+            <ul className="space-y-1 text-white">
               <li>Search Engine Optimization</li>
               <li>Web Designing</li>
               <li>Logo Design</li>
@@ -44,24 +44,24 @@ export default function Footer() {
             </div>
 
             {/* Social Icons */}
-            <div className="flex space-x-4">
-              <Link href="https://wa.me/6289000014"><FaWhatsapp className="hover:text-green-600" size={20} /></Link>
-              <Link href="mailto:vyaparguruinfotech@gmail.com"><SiGmail className="hover:text-red-500" size={20} /></Link>
-              <Link href="https://instagram.com/vyaparguru"><FaInstagram className="hover:text-pink-500" size={20} /></Link>
-              <Link href="https://linkedin.com/in/vyaparguru"><FaLinkedinIn className="hover:text-blue-500" size={20} /></Link>
+            <div className="flex space-x-4 text-white">
+              <Link href="https://wa.me/6289000014"><FaWhatsapp size={20} /></Link>
+              <Link href="mailto:vyaparguruinfotech@gmail.com"><SiGmail size={20} /></Link>
+              <Link href="https://instagram.com/vyaparguru"><FaInstagram size={20} /></Link>
+              <Link href="https://linkedin.com/in/vyaparguru"><FaLinkedinIn size={20} /></Link>
             </div>
           </div>
           
           {/* Contact Us */}
           <div className="text-left space-y-2">
-            <h3 className="text-lg font-semibold text-blue-500">Contact Us</h3>
-            <p>Link Road, Preet Nagar, Jalandhar, Punjab, 144001</p>
-            <p>62890 00014</p>
+            <h3 className="text-lg font-semibold text-white">Contact Us</h3>
+            <p className="text-white">Link Road, Preet Nagar, Jalandhar, Punjab, 144001</p>
+            <p className="text-white">62890 00014</p>
           </div>
         </div>
         
         {/* Bottom Section */}
-        <div className="border-t border-gray-600 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center text-sm text-white">
+        <div className="border-t border-white mt-8 text-white pt-4 flex flex-col md:flex-row justify-between items-center text-sm">
           <p>&copy; 2024 Vyapar Guru, All Rights Reserved</p>
           <div className="flex space-x-4">
             <a href="#" className="hover:underline">Privacy Policy</a>
