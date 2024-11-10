@@ -121,6 +121,15 @@ const ContactDetail = ({ icon, title, detail }) => (
   </div>
 );
 
+const SocialIcon = ({ icon, link, hoverColor }) => (
+  <a
+    href={link}
+    className={`text-2xl text-white p-1 rounded-full transition duration-300 hover:text-${hoverColor}`}
+  >
+    {icon}
+  </a>
+);
+
 // Animated Input Component with Chrome Autofill Fix
 const AnimatedInput = ({ label, type, name, value, onChange }) => (
   <div className="relative mb-6">
