@@ -2,8 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { FaWhatsapp, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
@@ -120,16 +119,6 @@ const ContactDetail = ({ icon, title, detail }) => (
       <p className="text-white">{detail}</p>
     </div>
   </div>
-);
-
-// Social Icon Component with hover color
-const SocialIcon = ({ icon, link, hoverColor }) => (
-  <a
-    href={link}
-    className={`text-2xl text-white p-1 rounded-full transition duration-300 hover:text-${hoverColor}`}
-  >
-    {icon}
-  </a>
 );
 
 // Animated Input Component with Chrome Autofill Fix
