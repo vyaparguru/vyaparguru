@@ -4,17 +4,17 @@
 import FaqSection from '@/components/Accordion';
 import Hero from '../components/Hero';
 import About from './about/page';
-import WhyUs from './why-us/page';
 import { Figures } from '@/components/Figures';
+import Choose from '@/components/choose';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <section className="py-2 bg-white">
-        <Figures/>
+      <section className="bg-white">
+        <Figures />
         <About/>
-        <WhyUs />
+        <Choose/>
       </section>
       <FaqSection/>
     </>

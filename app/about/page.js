@@ -7,7 +7,7 @@ import aboutImage2 from "../../assets/banner2.jpg"; // Replace with actual image
 
 const About = () => {
   return (
-    <section className="bg-white px-4 py-20 md:px-8 w-full">
+    <section className="bg-white px-4 py-16 md:px-8 w-full">
       {/* Main Heading */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-blue-500">About Vyapar Guru</h1>
