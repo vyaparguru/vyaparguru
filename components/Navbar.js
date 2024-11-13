@@ -7,7 +7,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import logo from "../assets/footerlogo.png";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
     <header className="bg-white shadow border-b">
       <div className="container mx-auto flex items-center justify-between px-4 md:px-8 py-4">
         <Link href="/">
-          <Image src={logo} alt="logo" width={60} height={10} />
+          <Image src={logo} alt="logo" width={150} height={20} />
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -74,7 +74,7 @@ const Navbar = () => {
           >
             {/* Logo in Overlay */}
             <Link href="/" className="absolute top-4 left-4 flex items-center">
-              <Image src={logo} alt="logo" width={60} height={10} />
+              <Image src={logo} alt="logo" width={150} height={10} />
             </Link>
 
             {/* Navigation Links */}
