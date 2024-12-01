@@ -1,4 +1,3 @@
-// pages/index.js
 "use client"
 import Link from "next/link";
 import website from "@/assets/banner1.jpg";
