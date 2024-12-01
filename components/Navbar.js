@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { CiSearch, CiShoppingCart } from "react-icons/ci";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { TfiClose } from "react-icons/tfi";
 import { RiCloseFill } from "react-icons/ri";
 import logo from "../assets/logo.png";
 
