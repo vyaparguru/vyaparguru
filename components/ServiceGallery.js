@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { FaChevronRight } from "react-icons/fa"; // Importing swipe icon
 import { IoIosArrowRoundForward } from "react-icons/io";
 import seo from "../assets/banner1.jpg";
 import seo1 from "../assets/banner2.jpg";

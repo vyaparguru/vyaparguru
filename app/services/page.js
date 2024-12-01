@@ -1,5 +1,5 @@
 // Import React Icons
-import { FaSearch, FaLaptopCode, FaPenNib, FaBullhorn, FaFacebookF, FaGoogle } from "react-icons/fa";
+import { FaSearch, FaPenNib, FaBullhorn, FaFacebookF, FaGoogle } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import Service1 from "@/components/Service1";
 import Service2 from "@/components/Service2";

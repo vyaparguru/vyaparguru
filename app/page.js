@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-        <Figures />
+      <Figures />
       <section className="bg-white">
         <HomeAbout/>
-      <NoCancellationPolicy/>
+        <NoCancellationPolicy/>
         <ServiceGallery/>
         <Procedure/>
         <Testimonials/>

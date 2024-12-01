@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import profileImg from "../assets/banner1.jpg"; // Replace with your image path
-import Testimonials from "./Testimonials";
 
 export const HomeAbout = () => {
   return (

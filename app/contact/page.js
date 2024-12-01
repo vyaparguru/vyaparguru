@@ -13,56 +13,55 @@ const ContactUs = () => {
       <div className="bg-white shadow-lg overflow-hidden rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x">
           {/* Left Section */}
-<div className="p-8">
-  <h3 className="text-black text-center text-4xl md:text-5xl font-semibold uppercase py-4">
-    <span className="text-blue-500">Get In Touch</span> With Us Now!
-  </h3>
-  <div className="grid grid-cols-1 gap-6 mt-6 md:px-8">
-    {/* Contact Item */}
-    <div className="flex items-start gap-4">
-      <div className="p-3  border border-blue-500 rounded-md">
-        <FaPhoneAlt className="text-blue-500 text-xl" />
-      </div>
-      <div>
-        <h4 className="text-black font-bold">Phone Number</h4>
-        <p className="text-black">+91 6289000014</p>
-      </div>
-    </div>
+            <div className="p-8">
+              <h3 className="text-black text-center text-4xl md:text-5xl font-semibold uppercase py-4">
+                <span className="text-blue-500">Get In Touch</span> With Us Now!
+              </h3>
+              <div className="grid grid-cols-1 gap-6 mt-6 md:px-8">
+                {/* Contact Item */}
+                <div className="flex items-start gap-4">
+                  <div className="p-3  border border-blue-500 rounded-md">
+                    <FaPhoneAlt className="text-blue-500 text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-black font-bold">Phone Number</h4>
+                    <p className="text-black">+91 6289000014</p>
+                  </div>
+                </div>
 
-    <div className="flex items-start gap-4">
-      <div className="p-3 border border-blue-500 rounded-md">
-        <FaEnvelope className="text-blue-500 text-xl" />
-      </div>
-      <div>
-        <h4 className="text-black font-bold">Email</h4>
-        <p className="text-black">vyaparguruinfotech@gmail.com</p>
-      </div>
-    </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 border border-blue-500 rounded-md">
+                    <FaEnvelope className="text-blue-500 text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-black font-bold">Email</h4>
+                    <p className="text-black">vyaparguruinfotech@gmail.com</p>
+                  </div>
+                </div>
 
-    <div className="flex items-start gap-4">
-      <div className="p-3 border border-blue-500 rounded-md">
-        <FaMapMarkerAlt className="text-blue-500 text-xl" />
-      </div>
-      <div>
-        <h4 className="text-black font-bold">Location</h4>
-        <p className="text-black">
-          Link Road, Preet Nagar, Jalandhar, Punjab, 144001
-        </p>
-      </div>
-    </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 border border-blue-500 rounded-md">
+                    <FaMapMarkerAlt className="text-blue-500 text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-black font-bold">Location</h4>
+                    <p className="text-black">
+                      Link Road, Preet Nagar, Jalandhar, Punjab, 144001
+                    </p>
+                  </div>
+                </div>
 
-    <div className="flex items-start gap-4">
-      <div className="p-3 border border-blue-500 rounded-md">
-        <FaClock className="text-blue-500 text-xl" />
-      </div>
-      <div>
-        <h4 className="text-black font-bold">Working Hours</h4>
-        <p className="text-black">Monday To Friday | 10:00 AM To 05:00 PM</p>
-        {/* <p className="text-black">10:00 AM To 05:00 PM</p> */}
-      </div>
-    </div>
-  </div>
-</div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 border border-blue-500 rounded-md">
+                    <FaClock className="text-blue-500 text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-black font-bold">Working Hours</h4>
+                    <p className="text-black">Monday To Friday | 10:00 AM To 05:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
           {/* Right Section */}
