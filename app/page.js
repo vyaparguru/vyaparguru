@@ -3,20 +3,28 @@
 
 import FaqSection from '@/components/Accordion';
 import Hero from '../components/Hero';
-import About from './about/page';
 import { Figures } from '@/components/Figures';
-import Choose from '@/components/choose';
+import NoCancellationPolicy from '@/components/NoCancellationPolicy';
+import { ServiceGallery } from '@/components/ServiceGallery';
+import { HomeAbout } from '@/components/HomeAbout';
+import Testimonials from '@/components/Testimonials';
+import { LetsTalk } from '@/components/Letstalk';
+import { Procedure } from '@/components/Procedure';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <section className="bg-white">
         <Figures />
-        <About/>
-        <Choose/>
+      <section className="bg-white">
+        <HomeAbout/>
+      <NoCancellationPolicy/>
+        <ServiceGallery/>
+        <Procedure/>
+        <Testimonials/>
       </section>
       <FaqSection/>
+      <LetsTalk/>
     </>
   );
 }

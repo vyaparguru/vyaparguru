@@ -7,32 +7,32 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-700 text-black py-8">
-      <div className="container mx-auto px-5 md:px-20">
+    <footer className="bg-gray-900 text-black py-8">
+      <div className="container mx-auto px-5 md:px-40">
         <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
           {/* Quick Links */}
           <div className="text-left space-y-2">
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
             <ul className="space-y-1 text-white">
-              <li>
-                <Link className="hover:underline" href="/about">
-                  About Us
+            <li>
+                <Link className="hover:underline" href="/">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link className="hover:underline" href="/why-us">
-                  Why Us
+                <Link className="hover:underline" href="/about">
+                  About 
                 </Link>
               </li>
               <li>
                 <Link className="hover:underline" href="/services">
                   Services
                 </Link>
-              </li>
               <li>
-                <Link className="hover:underline" href="/portfolio">
-                  Portfolio
+                <Link className="hover:underline" href="/why-us">
+                  Why Us
                 </Link>
+              </li>
               </li>
               <li>
                 <Link className="hover:underline" href="/contact">
@@ -57,7 +57,7 @@ export default function Footer() {
           {/* Logo and Social Icons */}
           <div className="flex flex-col md:items-center">
             {/* Logo Image */}
-            <div className="w-24 h-24 mb-4">
+            <div className="w-20 h-20 mb-4">
               <Image src={logo} alt="Logo" width={96} height={96} />
             </div>
 
@@ -84,7 +84,7 @@ export default function Footer() {
             <p className="text-white">
               Link Road, Preet Nagar, Jalandhar, Punjab, 144001
             </p>
-            <p className="text-white">62890 00014</p>
+            <p className="text-white">+91 62890 00014</p>
           </div>
         </div>
 

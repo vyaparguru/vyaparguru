@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: "Vyapar Guru",
+  title: "Vyapar Guru Infotech Pvt Ltd",
   description: "Vyapar Guru Infotech Pvt Ltd",
 };
 

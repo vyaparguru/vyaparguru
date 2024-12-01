@@ -1,30 +1,28 @@
 "use client";
 import Image from "next/image";
-import profileImg from "../../assets/banner1.jpg"; 
-import LetsTalk from "@/components/Letstalk";
-import Mission from "@/components/Mission";
+import profileImg from "../assets/banner1.jpg"; // Replace with your image path
+import Testimonials from "./Testimonials";
 
-export const About = () => {
+export const HomeAbout = () => {
   return (
-    <>
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-40 pt-24 pb-10 md:pt-24 md:py-24 bg-white">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-40 py-10 md:py-20 bg-white">
       {/* Left Section - Image */}
-      <div className="block pt-5">
+      <div className="hidden md:block ">
         <div className="overflow-hidden rounded-lg shadow-lg">
           <Image
             src={profileImg}
             alt="About Us Image"
-            className="object-cover md:w-[550px] md:h-[600px]"
+            className="object-cover w-[550px] h-[600px]"
           />
         </div>
       </div>
 
       {/* Right Section - Content */}
-      <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
+      <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
         <h3 className="text-blue-500 text-lg uppercase">
           About Us
         </h3>
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+        <h2 className="text-3xl md:text-5xl font-bold leading-tight">
           We Provide Digital <br /> Solutions for Your Business
         </h2>
         <p className="text-gray-600 text-sm md:text-base leading-relaxed">
@@ -51,10 +49,8 @@ export const About = () => {
         </div>
       </div>
     </div>
-    <Mission/>
-    <LetsTalk/>
-    </>
+    
   );
 };
 
-export default About;
+export default HomeAbout;
