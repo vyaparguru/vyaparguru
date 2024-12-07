@@ -13,12 +13,10 @@ const SEO = () => {
           SEARCH ENGINE OPTIMIZATION
         </p>
         <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black mb-8">
-          We Help to Create Strategies, Design
+        Drive traffic and improve rankings with optimized SEO strategies.
         </h2>
         <p className="text-gray-600 mb-8">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal.
+        Our SEO services ensure your website is easily discoverable by search engines and audiences alike. From keyword research to on-page and off-page optimization, we focus on improving your visibility, driving organic traffic, and delivering measurable results to help your business grow.
         </p>
         <Link href="/services/app-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
           Explore More →

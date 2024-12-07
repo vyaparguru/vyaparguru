@@ -18,7 +18,7 @@ export default function Home() {
       <Figures />
       <section className="bg-white">
         <HomeAbout/>
-        <NoCancellationPolicy/>
+        {/* <NoCancellationPolicy/> */}
         <ServiceGallery/>
         <Procedure/>
         <Testimonials/>

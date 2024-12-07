@@ -24,12 +24,10 @@ const GoogleAds = () => {
           GOOGLE ADS
         </p>
         <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black mb-4">
-          We’re Created a Visual System and Strategy
+        Maximize visibility and drive results with targeted Google Ads campaigns.
         </h2>
         <p className="text-gray-600 mb-6">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal.
+        Our Google Ads experts create data-driven campaigns that deliver immediate visibility and measurable ROI. By targeting the right audience with compelling ads, we help you reach your goals, whether it's increasing website traffic, generating leads, or boosting sales.
         </p>
         <Link href="/services/product-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
             Explore More →

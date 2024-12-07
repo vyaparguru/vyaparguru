@@ -1,7 +1,7 @@
 export default function ShippingAndDelivery() {
     return (
-      <div className="max-w-4xl md:max-w-7xl mx-auto py-10 px-6">
-        <h1 className="text-4xl font-bold text-center m-6 text-blue-500">Shipping and Delivery Policy</h1>
+      <div className="max-w-4xl md:max-w-7xl mx-auto py-10 px-6 md:px-10">
+        <h1 className="text-4xl font-bold text-center m-6 text-blue-500 mt-20 md:mt-24">Shipping and Delivery Policy</h1>
   
         <p className="text-md leading-relaxed mb-4">
           At Vyapar Guru, we are committed to delivering our services as per the agreed-upon time frame. We understand the importance of timely delivery and work hard to ensure that your expectations are met.

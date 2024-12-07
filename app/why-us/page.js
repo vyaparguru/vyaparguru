@@ -32,8 +32,7 @@ const WhyUs = () => {
             Reason for chosen us
           </h2>
           <p className="text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed
-            do eiusmod tempor incididunt simply free ut labore.
+          Trusted expertise, tailored solutions, and exceptional results.
           </p>
 
           {/* Feature Grid */}
@@ -48,7 +47,7 @@ const WhyUs = () => {
                   Fast Processing
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet consectet.
+                Delivering quick and efficient solutions tailored to your needs.
                 </p>
               </div>
             </div>
@@ -63,7 +62,7 @@ const WhyUs = () => {
                   Trusted Company
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet consectet.
+                A reliable partner committed to your success.
                 </p>
               </div>
             </div>
@@ -78,7 +77,7 @@ const WhyUs = () => {
                   In-time Delivery
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet consectet.
+                Ensuring your projects are completed on schedule, every time.
                 </p>
               </div>
             </div>
@@ -93,7 +92,7 @@ const WhyUs = () => {
                   Reasonable Price
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet consectet.
+                Providing quality services at competitive rates.
                 </p>
               </div>
             </div>
@@ -108,7 +107,7 @@ const WhyUs = () => {
                   Experienced Professionals
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet consectet.
+                Skilled experts delivering excellence at every step.
                 </p>
               </div>
             </div>
@@ -123,7 +122,7 @@ const WhyUs = () => {
                   24/7 Support
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Lorem ipsum dolor sit amet consectet.
+                Always here to assist you, anytime you need us.
                 </p>
               </div>
             </div>

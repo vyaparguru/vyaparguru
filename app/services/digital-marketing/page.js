@@ -24,12 +24,10 @@ const DigitalMarketing = () => {
           DIGITAL MARKETING
         </p>
         <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black mb-4">
-          We’re Created a Visual System and Strategy
+        Reach your audience and grow your brand with tailored digital marketing.
         </h2>
         <p className="text-gray-600 mb-6">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal.
+        Our comprehensive digital marketing solutions cover everything from content marketing to email campaigns and performance analytics. We design strategies that engage your audience, boost brand awareness, and convert leads into loyal customers, ensuring sustainable growth for your business.
         </p>
         <Link href="/services/product-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
             Explore More →

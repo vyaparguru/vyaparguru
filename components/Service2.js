@@ -24,12 +24,10 @@ const Service2 = () => {
           Website Designing
         </p>
         <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black mb-4">
-          We’re Created a Visual System and Strategy
+        Build a stunning, user-friendly website tailored to your needs.
         </h2>
         <p className="text-gray-600 mb-6">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal.
+        We specialize in creating responsive, modern websites that reflect your brand and meet your business objectives. From e-commerce platforms to corporate sites, we ensure your online presence is not only visually appealing but also functional and optimized for performance.
         </p>
         <Link href="/services/web-designing" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
             Explore More →

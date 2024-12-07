@@ -14,12 +14,10 @@ const LogoDesigning = () => {
           LOGO DESIGNING
         </p>
         <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black mb-8">
-          We Help to Create Strategies, Design
+        Craft a logo that represents your brand's identity.
         </h2>
         <p className="text-gray-600 mb-8">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal.
+        A logo is more than just a design—it's your brand’s first impression. Our expert designers create unique and memorable logos that capture your essence and leave a lasting impact. Let us help you establish a strong visual identity that resonates with your audience.
         </p>
         <Link href="/services/app-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
             Explore More →

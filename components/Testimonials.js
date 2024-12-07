@@ -17,9 +17,7 @@ export const Testimonials = () => {
             className="border border-black bg-white rounded-lg shadow-md p-6 space-y-4 hover:shadow-lg transition-shadow duration-300"
           >
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum distribution.
+            The team at Vyapar Guru Infotech is highly knowledgeable and dedicated. They provided innovative solutions that transformed our operations.
             </p>
             <div className="flex items-center space-x-4">
               <div>

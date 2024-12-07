@@ -22,7 +22,7 @@ const services = [
     id: 2,
     title: "Website Designing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Build a stunning, user-friendly website tailored to your needs.",
     bgColor: "bg-white",
     icon: <CgWebsite className="text-blue-500 w-6 h-6" />, // Web Design Icon
     link:"services/website-designing"
@@ -31,7 +31,7 @@ const services = [
     id: 3,
     title: "Logo Designing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Craft a logo that represents your brand's identity.",
     bgColor: "bg-blue-100",
     icon: <FaPenNib className="text-blue-500 w-6 h-6" />, // Logo Design Icon
     link:"services/logo-designing"
@@ -40,7 +40,7 @@ const services = [
     id: 4,
     title: "Digital Marketing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Reach your audience and grow your brand with tailored digital marketing.",
     bgColor: "bg-white",
     icon: <FaBullhorn className="text-blue-500 w-6 h-6" />, // Marketing Icon
     link:"services/digital-marketing"
@@ -49,7 +49,7 @@ const services = [
     id: 5,
     title: "Social Media Marketing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Build your brand presence across social platforms effectively.",
     bgColor: "bg-blue-100",
     icon: <FaFacebookF className="text-blue-500 w-6 h-6" />, // Social Media Icon
     link:"services/social-media-marketing"
@@ -58,7 +58,7 @@ const services = [
     id: 6,
     title: "Google Ads",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Maximize visibility and drive results with targeted Google Ads campaigns.",
     bgColor: "bg-white",
     icon: <FaGoogle className="text-blue-500 w-6 h-6" />, // Google Ads Icon
     link:"services/google-ads"
