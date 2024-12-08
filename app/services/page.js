@@ -13,7 +13,7 @@ const services = [
     id: 1,
     title: "SEO",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Drive traffic and improve rankings with optimized SEO strategies.",
     bgColor: "bg-blue-100",
     icon: <FaSearch className="text-blue-500 w-6 h-6" />, 
     link:"services/seo"
