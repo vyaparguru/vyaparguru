@@ -17,12 +17,12 @@ export const Testimonials = () => {
             className="border border-black bg-white rounded-lg shadow-md p-6 space-y-4 hover:shadow-lg transition-shadow duration-300"
           >
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-            The team at Vyapar Guru Infotech is highly knowledgeable and dedicated. They provided innovative solutions that transformed our operations.
+            The team at Vyapar Guru Infotech Pvt Ltd is highly knowledgeable and dedicated. They provided innovative solutions that transformed our operations.
             </p>
             <div className="flex items-center space-x-4">
               <div>
-                <h4 className="font-semibold text-black">Jane Cooper</h4>
-                <p className="text-sm text-gray-500">CEO at ABC Corporation</p>
+                <h4 className="font-semibold text-black">Relish Gupta</h4>
+                <p className="text-sm text-gray-500">Software Developer</p>
               </div>
             </div>
           </div>

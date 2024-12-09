@@ -20,7 +20,7 @@ We specialize in crafting effective strategies and innovative designs that empow
           {/* Testimonial Section */}
           <div className="mt-6 p-6 bg-blue-100 rounded-md shadow-md">
             <p className="text-gray-700">
-            Our mission is to deliver innovative solutions that empower businesses to achieve their goals. At [Your Company Name], we are committed to excellence, building trust, and driving meaningful impact for every client we serve.
+            Our mission is to deliver innovative solutions that empower businesses to achieve their goals. At Vyapar Guru Infotech Pvt Ltd, we are committed to excellence, building trust, and driving meaningful impact for every client we serve.
             </p>
             {/* Profile Details */}
             <div className="mt-4 flex items-center gap-4">

@@ -28,10 +28,7 @@ export const About = () => {
           We Provide Digital <br /> Solutions for Your Business
         </h2>
         <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using readable English looking at its layout.
+        At Vyapar Guru Infotech Pvt Ltd, we provide tailored service solutions designed to meet your unique needs. Our expert team focuses on innovation and excellence to deliver results that drive success. Partner with us for solutions that inspire, empower, and transform your business.
         </p>
 
         {/* Statistics */}

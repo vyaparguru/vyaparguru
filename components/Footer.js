@@ -90,7 +90,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-white mt-8 text-white pt-4 flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
-          <p>&copy; 2024 Vyapar Guru, All Rights Reserved</p>
+          <p>&copy; 2024 Vyapar Guru Infotech Pvt Ltd, All Rights Reserved</p>
           <div className="flex flex-wrap justify-center md:justify-start space-x-3">
             <Link href="/privacy" className="hover:underline">
               Privacy Policy
