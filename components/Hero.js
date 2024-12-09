@@ -33,7 +33,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 p-8 rounded-md">
         <h1 className="text-4xl md:text-4xl font-extrabold">
-          Make Digital Product With Our Agency
+          Business Karna Hai Shuru Toh Ask Vyapar Guru
         </h1>
         <p className="mt-4 text-md md:text-xl">
           Delivering excellence in every project we undertake.
