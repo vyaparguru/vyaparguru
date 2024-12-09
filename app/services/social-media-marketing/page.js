@@ -19,7 +19,7 @@ const SocialMediaMarketing = () => {
         <p className="text-gray-600 mb-8">
         Our social media marketing services create impactful campaigns that connect with your audience. By leveraging the power of platforms like Facebook, Instagram, and LinkedIn, we help you engage, inspire, and grow your community while driving meaningful results for your business.
         </p>
-        <Link href="/services/app-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
+        <Link href="/contact" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
             Explore More →
         </Link>
       </div>

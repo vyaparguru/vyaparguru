@@ -19,7 +19,7 @@ const LogoDesigning = () => {
         <p className="text-gray-600 mb-8">
         A logo is more than just a design—it's your brand’s first impression. Our expert designers create unique and memorable logos that capture your essence and leave a lasting impact. Let us help you establish a strong visual identity that resonates with your audience.
         </p>
-        <Link href="/services/app-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
+        <Link href="/contact" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
             Explore More →
         </Link>
       </div>

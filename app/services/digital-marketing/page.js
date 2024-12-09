@@ -29,7 +29,7 @@ const DigitalMarketing = () => {
         <p className="text-gray-600 mb-6">
         Our comprehensive digital marketing solutions cover everything from content marketing to email campaigns and performance analytics. We design strategies that engage your audience, boost brand awareness, and convert leads into loyal customers, ensuring sustainable growth for your business.
         </p>
-        <Link href="/services/product-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
+        <Link href="/contact" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
             Explore More →
         </Link>
       </div>

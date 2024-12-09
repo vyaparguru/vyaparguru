@@ -29,7 +29,7 @@ const GoogleAds = () => {
         <p className="text-gray-600 mb-6">
         Our Google Ads experts create data-driven campaigns that deliver immediate visibility and measurable ROI. By targeting the right audience with compelling ads, we help you reach your goals, whether it's increasing website traffic, generating leads, or boosting sales.
         </p>
-        <Link href="/services/product-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
+        <Link href="/contact" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
             Explore More →
         </Link>
       </div>

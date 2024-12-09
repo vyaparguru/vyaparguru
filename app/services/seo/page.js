@@ -18,7 +18,7 @@ const SEO = () => {
         <p className="text-gray-600 mb-8">
         Our SEO services ensure your website is easily discoverable by search engines and audiences alike. From keyword research to on-page and off-page optimization, we focus on improving your visibility, driving organic traffic, and delivering measurable results to help your business grow.
         </p>
-        <Link href="/services/app-design" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
+        <Link href="/contact" className="inline-block px-6 py-3 text-blue-500 font-medium border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition">
           Explore More →
         </Link>
       </div>
