@@ -14,8 +14,7 @@ export const LetsTalk = () => {
           <span className="text-blue-500">Let’s Talk</span>
         </h2>
         <p className="text-gray-600 text-sm md:text-base mb-6">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+        We’re here to bring your ideas to life and help your business grow. Reach out to us today, and let’s collaborate to create something amazing together.
         </p>
 
         {/* Button */}
