@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import procedure from "../assets/banner1.jpg"; // Replace with your asset path
+import procedure from "../public/banner1.jpg"; // Replace with your asset path
 
 export const Procedure = () => {
   return (

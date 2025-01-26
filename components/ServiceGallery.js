@@ -2,8 +2,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import seo from "../assets/banner1.jpg";
-import seo1 from "../assets/banner2.jpg";
+import seo from "../public/banner1.jpg";
+import seo1 from "../public/banner2.jpg";
 
 const services = [
   { src: seo, alt: "SEO" },

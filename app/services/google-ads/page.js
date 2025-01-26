@@ -1,7 +1,7 @@
 // pages/index.js
 "use client"
 import Link from "next/link";
-import website from "@/assets/banner1.jpg";
+import website from "@/public/banner1.jpg";
 import Image from "next/image";
 
 const GoogleAds = () => {

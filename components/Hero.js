@@ -2,8 +2,8 @@
 "use client";
 
 import { useState } from "react";
-import banner1 from "../assets/banner1.jpg";
-import banner2 from "../assets/banner2.jpg";
+import banner1 from "../public/banner1.jpg";
+import banner2 from "../public/banner2.jpg";
 import Link from "next/link";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai"; // Import React Icons
 

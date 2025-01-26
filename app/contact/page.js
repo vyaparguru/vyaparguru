@@ -1,5 +1,4 @@
-// pages/contact.js
-"use client";
+
 
 import FaqSection from "@/components/Accordion";
 import LetsTalk from "@/components/Letstalk";

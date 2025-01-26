@@ -2,7 +2,7 @@
 "use client"
 import Link from "next/link";
 
-import seo from "@/assets/banner2.jpg";
+import seo from "@/public/banner2.jpg";
 import Image from "next/image";
 
 const SocialMediaMarketing = () => {

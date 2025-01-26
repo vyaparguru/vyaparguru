@@ -1,6 +1,6 @@
-"use client";
+
 import Image from "next/image";
-import profileImg from "../../assets/banner1.jpg"; 
+import profileImg from "../../public/banner1.jpg"; 
 import LetsTalk from "@/components/Letstalk";
 import Mission from "@/components/Mission";
 

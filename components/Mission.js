@@ -1,8 +1,8 @@
 // components/Mission.js
 "use client"
 import Image from "next/image";
-import missionImage from "../assets/banner1.jpg"; // Replace with the actual image path
-import profileImage from "../assets/banner2.jpg"; // Replace with the actual profile path
+import missionImage from "../public/banner1.jpg"; // Replace with the actual image path
+import profileImage from "../public/banner2.jpg"; // Replace with the actual profile path
 
 const Mission = () => {
   return (

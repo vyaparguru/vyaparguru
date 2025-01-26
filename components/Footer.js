@@ -1,109 +1,93 @@
+"use client"
+
 import Image from "next/image";
 import { FaWhatsapp, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-
-import logo from "../assets/footerlogo.png";
+import logo from "../public/footerlogo.png";
 import Link from "next/link";
+
+const quickLinks = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Why Us", href: "/why-us" },
+  { name: "Contact", href: "/contact" },
+];
+
+const services = [
+  "Marketing",
+  "eCommerce",
+  "IT Services",
+  "Content Creation",
+  "Business Set-up",
+  "Legal, Book Keeping & Compliance Services"
+];
+
+const policies = [
+  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Terms and Conditions", href: "/terms" },
+  { name: "Refund and Cancellation", href: "/refund" },
+  { name: "Shipping and Delivery", href: "/shipping" },
+];
+
+const socialLinks = [
+  { href: "https://wa.me/6289000014", icon: FaWhatsapp, label: "WhatsApp" },
+  { href: "mailto:vyaparguruinfotech@gmail.com", icon: SiGmail, label: "Gmail" },
+  { href: "https://instagram.com/vyaparguru", icon: FaInstagram, label: "Instagram" },
+  { href: "https://linkedin.com/in/vyaparguru", icon: FaLinkedinIn, label: "LinkedIn" },
+];
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-black py-8">
-      <div className="container mx-auto px-5 md:px-40">
+      <div className="container mx-auto px-5 md:px-0 lg:px-40">
         <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
-          {/* Quick Links */}
           <div className="text-left space-y-2">
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
             <ul className="space-y-1 text-white">
-            <li>
-                <Link className="hover:underline" href="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:underline" href="/about">
-                  About 
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:underline" href="/services">
-                  Services
-                </Link>
-              <li>
-                <Link className="hover:underline" href="/why-us">
-                  Why Us
-                </Link>
-              </li>
-              </li>
-              <li>
-                <Link className="hover:underline" href="/contact">
-                  Contact
-                </Link>
-              </li>
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <Link className="hover:underline" href={link.href}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-
-          {/* Services We Offer */}
           <div className="text-left space-y-2">
             <h3 className="text-lg font-semibold text-white">Services We Offer</h3>
             <ul className="space-y-1 text-white">
-              <li>Search Engine Optimization</li>
-              <li>Web Designing</li>
-              <li>Logo Design</li>
-              <li>Digital Marketing</li>
-              <li>Social Media Marketing</li>
+              {services.map((service, index) => (
+                <li key={index}>{service}</li>
+              ))}
             </ul>
           </div>
-
-          {/* Logo and Social Icons */}
           <div className="flex flex-col md:items-center">
-            {/* Logo Image */}
             <div className="w-20 h-20 mb-4">
               <Image src={logo} alt="Logo" width={96} height={96} />
             </div>
-
-            {/* Social Icons */}
             <div className="flex space-x-4 text-white">
-              <Link href="https://wa.me/6289000014" aria-label="WhatsApp">
-                <FaWhatsapp size={20} />
-              </Link>
-              <Link href="mailto:vyaparguruinfotech@gmail.com" aria-label="Gmail">
-                <SiGmail size={20} />
-              </Link>
-              <Link href="https://instagram.com/vyaparguru" aria-label="Instagram">
-                <FaInstagram size={20} />
-              </Link>
-              <Link href="https://linkedin.com/in/vyaparguru" aria-label="LinkedIn">
-                <FaLinkedinIn size={20} />
-              </Link>
+              {socialLinks.map(({ href, icon: Icon, label }) => (
+                <Link key={label} href={href} aria-label={label}>
+                  <Icon size={20} />
+                </Link>
+              ))}
             </div>
           </div>
-
-          {/* Contact Us */}
           <div className="text-left space-y-2">
             <h3 className="text-lg font-semibold text-white">Contact Us</h3>
-            <p className="text-white">
-              Link Road, Preet Nagar, Jalandhar, Punjab, 144001
-            </p>
+            <p className="text-white">Link Road, Preet Nagar, Jalandhar, Punjab, 144001</p>
             <p className="text-white">+91 62890 00014</p>
           </div>
         </div>
-
-        {/* Bottom Section */}
         <div className="border-t border-white mt-8 text-white pt-4 flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
           <p>&copy; 2024 Vyapar Guru Infotech Pvt Ltd, All Rights Reserved</p>
           <div className="flex flex-wrap justify-center md:justify-start space-x-3">
-            <Link href="/privacy" className="hover:underline">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:underline">
-              Terms and Conditions
-            </Link>
-            <Link href="/refund" className="hover:underline">
-              Refund and Cancellation
-            </Link>
-            <Link href="/shipping" className="hover:underline">
-              Shipping and Delivery
-            </Link>
+            {policies.map((policy) => (
+              <Link key={policy.name} href={policy.href} className="hover:underline">
+                {policy.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
