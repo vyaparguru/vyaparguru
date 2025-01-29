@@ -15,12 +15,12 @@ const quickLinks = [
 ];
 
 const services = [
-  "Marketing",
-  "eCommerce",
-  "IT Services",
-  "Content Creation",
-  "Business Set-up",
-  "Legal, Book Keeping & Compliance Services"
+  {name:"Marketing", href:"/collections/marketing"},
+  {name:"eCommerce", href:"/collections/ecommerce"},
+  {name:"IT Services", href:"/collections/it-services"},
+  {name:"Content Creation",href:"/collections/content-creation"},
+  {name:"Business Set-up", href:"/collections/business-setup"},
+  {name:"Legal, Book Keeping & Compliance Services",href:"/collections/legal-bookkeeping-compliance"}
 ];
 
 const policies = [
@@ -39,8 +39,8 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-black py-8">
-      <div className="container mx-auto px-5 md:px-0 lg:px-40">
+    <footer className="bg-gray-900 text-black py-8 ">
+      <div className="container mx-auto px-5 md:px-0 lg:px-40 ">
         <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
           <div className="text-left space-y-2">
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
@@ -58,7 +58,11 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-white">Services We Offer</h3>
             <ul className="space-y-1 text-white">
               {services.map((service, index) => (
-                <li key={index}>{service}</li>
+                <li key={index}>
+                  <Link className="hover:underline" href={service.href}>
+                    {service.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -81,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-white mt-8 text-white pt-4 flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
-          <p>&copy; 2024 Vyapar Guru Infotech Pvt Ltd, All Rights Reserved</p>
+          <p>&copy; {new Date().getFullYear()} Vyapar Guru Infotech Pvt Ltd, All Rights Reserved</p>
           <div className="flex flex-wrap justify-center md:justify-start space-x-3">
             {policies.map((policy) => (
               <Link key={policy.name} href={policy.href} className="hover:underline">

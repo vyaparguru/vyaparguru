@@ -1,26 +1,35 @@
-"use client"
+import Category from '@/components/Category'
+import React from 'react'
 
-import React from "react";
+import banner from "@/public/banner1.jpg"
+import {  FaFileSignature, FaGlobe, FaIdCard } from 'react-icons/fa';
 
-export default function Maintenance() {
+export default function BusinessSetup() {
+
+
+  const title = "Business Setup";
+  const subtitle = "Take your Business Setup to the next level.";
+
+  const popularServices = [
+    { id: 1, item: "Private Limited Company", icon: <FaFileSignature size={47} className="bg-blue-50 p-2 rounded-lg" /> },
+    { id: 2, item: "Dubai Incorporation", icon: <FaGlobe size={47} className="bg-blue-50 p-2 rounded-lg" /> },
+    { id: 3, item: "GST", icon: <FaIdCard size={47} className="bg-blue-50 p-2 rounded-lg" /> },
+  ];
+
+  const marketingCategories = [
+    { title: "Business Registration", services: ["Private Limited Company"], image: banner },
+    { title: "International Business", services: ["Dubai Incorportion"], image: banner },
+    { title: "Licenses and Registrations", services: ["GST"], image: banner },
+  ];
+
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-blue-500 pt-40">
-      <div className="text-center">
-        <div className="max-w-xs mx-auto">
-          {/* Replace the src with your SVG */}
-          <img
-            src="/404.webp"
-            alt="Under Maintenance"
-            className="w-full h-auto mb-6"
-          />
-        </div>
-        <h1 className="text-3xl font-bold text-black">
-          We're Under Maintenance
-        </h1>
-        <p className="mt-4 text-white">
-          We're working hard to bring you an improved experience. Please check back later!
-        </p>
-      </div>
-    </div>
-  );
-}
+    <>
+      <Category
+        bannerImage={banner}
+        title={title}
+        subtitle={subtitle}
+        popularServices={popularServices}
+        categories={marketingCategories}
+      />
+    </>
+  )}

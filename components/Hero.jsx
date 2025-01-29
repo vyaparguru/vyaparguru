@@ -1,11 +1,10 @@
-// components/Hero.js
 "use client";
 
 import { useState } from "react";
 import banner1 from "../public/banner1.jpg";
 import banner2 from "../public/banner2.jpg";
 import Link from "next/link";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai"; // Import React Icons
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const banners = [banner1, banner2];
 
@@ -27,10 +26,8 @@ const Hero = () => {
         backgroundImage: `url(${banners[currentBanner].src})`,
       }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
 
-      {/* Content */}
       <div className="relative z-10 p-8 rounded-md">
         <h1 className="text-4xl md:text-4xl font-extrabold">
           Business Karna Hai Shuru Toh Ask Vyapar Guru
@@ -45,18 +42,17 @@ const Hero = () => {
         </Link>
       </div>
 
-      {/* Carousel Controls */}
       <button
         onClick={prevBanner}
         className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-opacity-70 p-2 rounded-full z-10 flex items-center justify-center"
       >
-        <AiOutlineLeft className="text-white text-2xl" /> {/* Left Arrow Icon */}
+        <AiOutlineLeft className="text-white text-2xl" />
       </button>
       <button
         onClick={nextBanner}
         className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-opacity-70 p-2 rounded-full z-10 flex items-center justify-center"
       >
-        <AiOutlineRight className="text-white text-2xl" /> {/* Right Arrow Icon */}
+        <AiOutlineRight className="text-white text-2xl" />
       </button>
     </section>
   );

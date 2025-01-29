@@ -1,4 +1,3 @@
-// components/FaqSection.js
 "use client"
 
 import React, { useState } from 'react';
@@ -41,7 +40,6 @@ const FaqSection = () => {
         </p>
       </div>
 
-      {/* FAQ Items */}
       <div className="max-w-2xl mx-auto">
         {faqs.map((faq, index) => (
           <div

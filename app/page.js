@@ -1,7 +1,6 @@
 // pages/index.js
 "use client"
 
-import FaqSection from '@/components/Accordion';
 import Hero from '../components/Hero';
 import { Figures } from '@/components/Figures';
 import NoCancellationPolicy from '@/components/NoCancellationPolicy';
@@ -10,6 +9,7 @@ import { HomeAbout } from '@/components/HomeAbout';
 import Testimonials from '@/components/Testimonials';
 import { LetsTalk } from '@/components/Letstalk';
 import { Procedure } from '@/components/Procedure';
+import FaqSection from '@/components/Accordion';
 
 export default function Home() {
   return (
