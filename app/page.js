@@ -1,15 +1,15 @@
-// pages/index.js
 "use client"
 
-import Hero from '../components/Hero';
-import { Figures } from '@/components/Figures';
-import NoCancellationPolicy from '@/components/NoCancellationPolicy';
-import { ServiceGallery } from '@/components/ServiceGallery';
-import { HomeAbout } from '@/components/HomeAbout';
-import Testimonials from '@/components/Testimonials';
-import { LetsTalk } from '@/components/Letstalk';
-import { Procedure } from '@/components/Procedure';
-import FaqSection from '@/components/Accordion';
+import FaqSection from "@/components/HomeScreen/Accordion";
+import { Figures } from "@/components/HomeScreen/Figures";
+import Hero from "@/components/HomeScreen/Hero";
+import HomeAbout from "@/components/HomeScreen/HomeAbout";
+import LetsTalk from "@/components/HomeScreen/Letstalk";
+import { Procedure } from "@/components/HomeScreen/Procedure";
+import { ServiceGallery } from "@/components/HomeScreen/ServiceGallery";
+import Testimonials from "@/components/HomeScreen/Testimonials";
+
+
 
 export default function Home() {
   return (
@@ -17,14 +17,13 @@ export default function Home() {
       <Hero />
       <Figures />
       <section className="bg-white">
-        <HomeAbout/>
-        {/* <NoCancellationPolicy/> */}
-        <ServiceGallery/>
-        <Procedure/>
-        <Testimonials/>
+        <HomeAbout />
+        <ServiceGallery />
+        <Procedure />
+        <Testimonials />
       </section>
-      <FaqSection/>
-      <LetsTalk/>
+      <FaqSection />
+      <LetsTalk />
     </>
   );
 }

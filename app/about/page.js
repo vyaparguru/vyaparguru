@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import profileImg from "../../public/banner1.jpg"; 
-import LetsTalk from "@/components/Letstalk";
+import LetsTalk from "@/components/HomeScreen/Letstalk";
 import Mission from "@/components/Mission";
 
 export const About = () => {

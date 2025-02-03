@@ -11,7 +11,7 @@ export default function IT() {
   const subtitle = "Take your IT to the next level.";
 
   const popularServices = [
-    { id: 1, item: "Wix", icon: <FaWix size={47} className="bg-blue-50 p-2 rounded-lg" /> },
+    { id: 1, item: "Wix", icon: <FaWix size={47} className="bg-blue-50 p-2 rounded-lg" />, href:"/collections/wix" },
   ];
 
   const marketingCategories = [

@@ -11,7 +11,7 @@ export default function ContentCreation() {
   const subtitle = "Take your Content Creation to the next level.";
 
   const popularServices = [
-    { id: 1, item: "Graphic Designing", icon: <FaPaintBrush size={47} className="bg-blue-50 p-2 rounded-lg" /> },
+    { id: 1, item: "Graphic Designing", icon: <FaPaintBrush size={47} className="bg-blue-50 p-2 rounded-lg" />,href:"/collections/graphic-designing" },
   ];
 
   const marketingCategories = [

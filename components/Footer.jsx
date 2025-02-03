@@ -19,8 +19,8 @@ const services = [
   {name:"eCommerce", href:"/collections/ecommerce"},
   {name:"IT Services", href:"/collections/it-services"},
   {name:"Content Creation",href:"/collections/content-creation"},
-  {name:"Business Set-up", href:"/collections/business-setup"},
-  {name:"Legal, Book Keeping & Compliance Services",href:"/collections/legal-bookkeeping-compliance"}
+  {name:"Business Set-up", href:"/collections/business-set-up"},
+  {name:"Legal, Book Keeping & Compliance Services",href:"/collections/legal-book-keeping-and-compliance"}
 ];
 
 const policies = [
@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-white mt-8 text-white pt-4 flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
           <p>&copy; {new Date().getFullYear()} Vyapar Guru Infotech Pvt Ltd, All Rights Reserved</p>
-          <div className="flex flex-wrap justify-center md:justify-start space-x-3">
+          <div className="flex flex-wrap justify-center md:justify-start space-x-4">
             {policies.map((policy) => (
               <Link key={policy.name} href={policy.href} className="hover:underline">
                 {policy.name}

@@ -11,9 +11,9 @@ export default function BusinessSetup() {
   const subtitle = "Take your Business Setup to the next level.";
 
   const popularServices = [
-    { id: 1, item: "Private Limited Company", icon: <FaFileSignature size={47} className="bg-blue-50 p-2 rounded-lg" /> },
-    { id: 2, item: "Dubai Incorporation", icon: <FaGlobe size={47} className="bg-blue-50 p-2 rounded-lg" /> },
-    { id: 3, item: "GST", icon: <FaIdCard size={47} className="bg-blue-50 p-2 rounded-lg" /> },
+    { id: 1, item: "Private Limited Company", icon: <FaFileSignature size={47} className="bg-blue-50 p-2 rounded-lg" />,href:"/collections/private-limited-company" },
+    { id: 2, item: "Dubai Incorporation", icon: <FaGlobe size={47} className="bg-blue-50 p-2 rounded-lg" />,href:"/collections/dubai-incorporation" },
+    { id: 3, item: "GST", icon: <FaIdCard size={47} className="bg-blue-50 p-2 rounded-lg" />,href:"/collections/gst" },
   ];
 
   const marketingCategories = [

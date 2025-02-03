@@ -1,3 +1,5 @@
+"use client"
+
 import Category from '@/components/Category'
 import React from 'react'
 
@@ -12,14 +14,14 @@ export default function Ecommerce() {
   const subtitle = "Take your eCommerce to the next level.";
 
   const popularServices = [
-    { id: 1, item: "Sell on Amazon", icon: <FaAmazon size={47} className="bg-blue-50 p-2 rounded-lg" /> },
-    { id: 2, item: "Razorpay", icon: <MdPayment size={47} className="bg-blue-50 p-2 rounded-lg" /> },
-    { id: 3, item: "Cashfree", icon: <MdOutlinePayments size={47} className="bg-blue-50 p-2 rounded-lg" /> },
+    { id: 1, item: "Sell on Amazon", icon: <FaAmazon size={47} className="bg-blue-50 p-2 rounded-lg" />,href:"/collections/sell-on-amazon" },
+    { id: 2, item: "Razorpay", icon: <MdPayment size={47} className="bg-blue-50 p-2 rounded-lg" />,href:"/collections/razorpay" },
+    { id: 3, item: "Cashfree", icon: <MdOutlinePayments size={47} className="bg-blue-50 p-2 rounded-lg" />,href:"/collections/cashfree" },
   ];
 
   const marketingCategories = [
     { title: "Online Selling", services: ["Sell on Amazon"], image: banner },
-    { title: "Payment Gateway", services: ["Razorpay, Cashfree"], image: banner },
+    { title: "Payment Gateway", services: ["Razorpay", "Cashfree"], image: banner },
   ];
 
   return (

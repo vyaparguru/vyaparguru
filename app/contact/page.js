@@ -1,13 +1,13 @@
 
 
-import FaqSection from "@/components/Accordion";
-import LetsTalk from "@/components/Letstalk";
+import FaqSection from "@/components/HomeScreen/Accordion";
+import LetsTalk from "@/components/HomeScreen/Letstalk";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
     <>
-    <section className="bg-blue-50 py-24 md:py-40 px-5 md:px-20 lg:px-40">
+    <section className="bg-blue-50 py-36 md:py-40 px-5 md:px-20 lg:px-40">
       {/* Container */}
       <div className="bg-white shadow-lg overflow-hidden rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x">

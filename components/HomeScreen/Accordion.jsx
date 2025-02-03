@@ -6,7 +6,7 @@ import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 const faqs = [
   {
     question: "What services do you offer?",
-    answer: "We offer SEO, Website Design, Logo Design, Digital Marketing, and Social Media Marketing services to help you grow your online presence.",
+    answer: "We offer Marketing, eCommerce, IT, Content Creation, Business set-up, Legal, Book Keeping and Compliance services to help you grow your online presence.",
   },
   {
     question: "How long does it take to complete a project?",
@@ -40,7 +40,7 @@ const FaqSection = () => {
         </p>
       </div>
 
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {faqs.map((faq, index) => (
           <div
             key={index}

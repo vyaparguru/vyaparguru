@@ -10,16 +10,19 @@ import {
   CiShoppingCart,
   CiUser,
 } from "react-icons/ci";
-import { FiMenu, FiX } from "react-icons/fi";
-import { MdOutlineKeyboardArrowRight, MdOutlinePhoneInTalk } from "react-icons/md";
-import logo from "../public/logo.png";
+import { FiX } from "react-icons/fi";
+import logo from "@/public/logo.png";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { MobileMenu } from "./MobileMenu";
+import { DesktopMenu } from "./DesktopMenu";
+import DesktopNavlinks from "./DesktopNavlinks";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchDropdown, setSearchDropdown] = useState(false);
+  const [PCSearchDropdown, setPCSearchDropdown] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const searchBoxRef = useRef(null);
 
@@ -29,48 +32,22 @@ const Navbar = () => {
     setOpenDropdown(openDropdown === index ? null : index);
   };
 
-  const navLinks = [
-    {
-      name: "Marketing",
-      href: "/collections/marketing",
-      subItems: ["Digital Marketing", "Social Media", "SEO"],
-    },
-    {
-      name: "eCommerce",
-      href: "/collections/ecommerce",
-      subItems: ["Online Stores", "Payment Gateways"],
-    },
-    {
-      name: "IT Services",
-      href: "/collections/it-services",
-      subItems: ["Web Development", "App Development"],
-    },
-    {
-      name: "Content Creation",
-      href: "/collections/content-creation",
-      subItems: ["Video Production", "Graphic Design"],
-    },
-    {
-      name: "Business Set-up",
-      href: "/collections/business-setup",
-      subItems: ["Company Registration", "Business Planning"],
-    },
-    {
-      name: "Legal, Book Keeping and Compliance Services",
-      href: "/collections/legal, book keeping & compliance services",
-      subItems: ["Tax Compliance", "Auditing", "Legal Advisory"],
-    },
-  ];
-
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
   };
 
-  const filteredServices = navLinks
-    .flatMap((link) => link.subItems || [])
-    .filter((service) =>
-      service.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+  const allServices = DesktopNavlinks.flatMap((link) => link.subItems || []);
+
+  // Filter subItems based on search input
+  const filteredServices = allServices.filter((service) =>
+    service.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  // const filteredServices = DesktopNavlinks
+  //   .flatMap((link) => link.subItems || [])
+  //   .filter((service) =>
+  //     service.toLowerCase().includes(searchQuery.toLowerCase())
+  //   );
 
   const toggleDropdown = (index) => {
     setOpenDropdown(openDropdown === index ? null : index);
@@ -78,13 +55,22 @@ const Navbar = () => {
 
   const toggleSearchDropdown = () => {
     setSearchDropdown(true);
-    setIsMobileMenuOpen(false);
+    console.log("opened")
+    // setIsMobileMenuOpen(false);
+  };
+
+
+  const togglePCSearchDropdown = () => {
+    setPCSearchDropdown(true);
+    console.log("opened")
+    // setIsMobileMenuOpen(false);
   };
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (searchBoxRef.current && !searchBoxRef.current.contains(e.target)) {
         setSearchDropdown(false);
+        setPCSearchDropdown(false);
       }
     };
 
@@ -112,24 +98,25 @@ const Navbar = () => {
           <div className="flex space-x-1 w-full ">
             <div className="hidden md:flex flex-1 mx-4 z-10" ref={searchBoxRef}>
               <div className="relative w-full">
-                <CiSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-grfay-500 w-6 h-6" />
+                <CiSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 w-6 h-6" />
                 <input
                   type="text"
                   placeholder="Search for services"
                   value={searchQuery}
                   onChange={handleSearch}
                   className="w-full pl-12 py-2 border rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  onClick={toggleSearchDropdown}
+                  onClick={togglePCSearchDropdown}
                 />
-                {searchDropdown && filteredServices.length > 0 && (
+                {PCSearchDropdown && filteredServices.length > 0 && (
                   <div className="absolute bg-white border rounded-lg shadow-lg mt-2 max-h-60 overflow-y-auto z-50 w-full">
                     {filteredServices.map((service, index) => (
-                      <div
+                      <Link
                         key={index}
-                        className="px-4 py-2 hover:bg-blue-100 cursor-pointer text-gray-700"
+                        href={`/collections/${service.toLowerCase().replace(/[\s,]+/g, "-")}`}
+                        className="block px-4 py-2 hover:bg-blue-100 cursor-pointer text-gray-700"
                       >
                         {service}
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -150,31 +137,10 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className="hidden md:flex justify-center items-center gap-5 px-4 text-sm font-normal">
-            {navLinks.map((menu, index) => (
-              <div className="relative" key={index}>
-                <button
-                  className="border border-blue-100 bg-blue-100 p-2 rounded-xl"
-                  onClick={() => handleDropdown(index)}
-                >
-                  {menu.name}
-                </button>
-                {openDropdown === index && (
-                  <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
-                    {menu.subItems.map((subItem, subIndex) => (
-                      <Link
-                        key={subIndex}
-                        href={href}
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      >
-                        {subItem}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+          <DesktopMenu
+            openDropdown={openDropdown}
+            handleDropdown={handleDropdown}
+          />
         </div>
       </div>
       <div className="md:hidden px-4 py-2" ref={searchBoxRef}>
@@ -192,75 +158,31 @@ const Navbar = () => {
         {searchDropdown && filteredServices.length > 0 && (
           <div className="absolute bg-white border rounded-lg shadow-lg mt-2 max-h-60 overflow-y-auto z-5 w-[90%]">
             {filteredServices.map((service, index) => (
-              <div
+              <Link
                 key={index}
-                className="px-4 py-2 hover:bg-blue-100 cursor-pointer text-gray-700"
+                href={`/collections/${service.toLowerCase().replace(/[\s,]+/g, "-")}`}
+                className="block px-4 py-2 hover:bg-blue-100 cursor-pointer text-gray-700"
               >
                 {service}
-              </div>
+              </Link>
             ))}
           </div>
         )}
       </div>
+
       <div className="relative">
-        {/* Overlay */}
         {isMobileMenuOpen && (
           <div
             className="fixed inset-0 bg-black bg-opacity-50 z-30 transition-opacity"
             onClick={() => setIsMobileMenuOpen(false)}
           />
         )}
-
-        {/* Sidebar */}
-        <div
-          className={`fixed top-0 left-0 h-full bg-white z-40 p-6 transition-transform transform ${isMobileMenuOpen ? "translate-x-0 visible opacity-100" : "-translate-x-full invisible opacity-0"
-            }`}
-          style={{ width: "70%" }}
-        >
-          <div className="mt-16 border-t-2 pt-8">
-            {navLinks.map((link, index) => (
-              <div key={index} className="mb-4">
-                <div className="flex">
-                  <div
-                    className="text-md border-b-2 w-full pb-2 font-medium flex items-center justify-between cursor-pointer"
-                    onClick={() => toggleDropdown(index)}
-                  >
-                    {link.name}
-                    <span>
-                      <MdOutlineKeyboardArrowRight
-                        size={20}
-                        className={`transition-transform ${openDropdown === index ? "rotate-90" : ""
-                          }`}
-                      />
-                    </span>
-                  </div>
-                </div>
-                {openDropdown === index && (
-                  <ul className="mt-2 space-y-2 border-b-2 py-1">
-                    {link.subItems.map((subItem, idx) => (
-                      <li key={idx} className="pl-4 text-gray-600">
-                        {subItem}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
-          <div className="absolute bottom-10">
-            <div className="text-gray-600 text-sm flex items-center ">
-              <MdOutlinePhoneInTalk size={24} className="mr-2 text-blue-600 " />
-              <div>
-                <span className="text-black font-medium">Need help?</span>
-                <br />
-                <a href="tel:6289000014" className="text-sm text-blue-500">
-                  Contact us on 6289000014
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <MobileMenu
+          navLinks={DesktopNavlinks}
+          isMobileMenuOpen={isMobileMenuOpen}
+          openDropdown={openDropdown}
+          toggleDropdown={toggleDropdown}
+        />
       </div>
 
     </nav>

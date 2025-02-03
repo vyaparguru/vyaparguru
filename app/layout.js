@@ -1,6 +1,7 @@
 import './../globals.css';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/NavigationBar/Navbar';
 import Footer from '../components/Footer';
+import WhatsappButton from '@/components/WhatsappButton';
 
 export const metadata = {
   title: "Vyapar Guru Infotech Pvt Ltd",
@@ -17,6 +18,7 @@ export default function Layout({ children }) {
         <Navbar /> 
         <main>{children}</main> 
         <Footer/>
+        <WhatsappButton/>
       </body>
     </html>
   );
