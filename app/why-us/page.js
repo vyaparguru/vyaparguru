@@ -1,10 +1,9 @@
-// pages/index.js
 "use client";
 
 import Image from "next/image";
 import { FaBolt, FaCheckCircle, FaClock, FaDollarSign, FaHandHoldingUsd, FaPhoneAlt } from "react-icons/fa"; 
 import { FaPerson } from "react-icons/fa6";
-import profileImg from "../../public/banner1.jpg"; // Replace with your actual image path
+import profileImg from "../../public/banner1.jpg"; 
 import Testimonials from "@/components/HomeScreen/Testimonials";
 import LetsTalk from "@/components/HomeScreen/Letstalk";
 

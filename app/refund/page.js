@@ -1,3 +1,5 @@
+"use client"
+
 export default function RefundAndCancellation() {
     return (
       <div className="max-w-4xl md:max-w-7xl mx-auto py-16 px-6 md:px-10 2xl:pb-48">

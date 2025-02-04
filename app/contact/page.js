@@ -1,4 +1,4 @@
-
+"use client"
 
 import FaqSection from "@/components/HomeScreen/Accordion";
 import LetsTalk from "@/components/HomeScreen/Letstalk";

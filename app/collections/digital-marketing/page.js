@@ -1,6 +1,7 @@
+"use client"
+
 import Category from '@/components/Category'
 import React from 'react'
-
 import banner from "@/public/banner1.jpg"
 import { PiMetaLogo } from "react-icons/pi";
 import { TbSettingsBolt } from "react-icons/tb";

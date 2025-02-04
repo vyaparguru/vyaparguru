@@ -4,32 +4,32 @@ const DesktopNavlinks = [
     {
       name: "Marketing",
       href: "/collections/marketing",
-      subItems: ["Digital Marketing", "Social Media", "SEO"],
+      subItems: ["Digital Marketing", "Whatsapp Marketing"],
     },
     {
       name: "eCommerce",
       href: "/collections/ecommerce",
-      subItems: ["Online Stores", "Payment Gateways"],
+      subItems: ["Online Selling", "Payment Gateway"],
     },
     {
       name: "IT Services",
       href: "/collections/it-services",
-      subItems: ["Web Development", "App Development"],
+      subItems: ["Website Designing"],
     },
     {
       name: "Content Creation",
       href: "/collections/content-creation",
-      subItems: ["Video Production", "Graphic Design"],
+      subItems: ["Graphic Designing"],
     },
     {
       name: "Business Set-up",
       href: "/collections/business-set-up",
-      subItems: ["Company Registration", "Business Planning"],
+      subItems: ["Business Registration", "International Business","Licenses and Registrations"],
     },
     {
       name: "Legal, Book Keeping and Compliance",
       href: "/collections/legal-book-keeping-and-compliance",
-      subItems: ["Tax Compliance", "Auditing", "Legal Advisory"],
+      subItems: ["Taxation", "Trademark and IP"],
     },
   ];
 

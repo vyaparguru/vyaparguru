@@ -123,7 +123,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex justify-between items-center space-x-1">
-              <button className="text-white md:text-black p-2 rounded-full hover:bg-gray-100 ">
+              <button className="text-white md:hidden p-2 rounded-full hover:bg-gray-100 ">
                 <CiPhone className="w-6 h-6" />
               </button>
               <button className="text-white md:text-black p-2 rounded-full hover:bg-gray-100">

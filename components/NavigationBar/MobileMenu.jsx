@@ -2,8 +2,10 @@
 
 import React from 'react'
 import { MdOutlineKeyboardArrowRight, MdOutlinePhoneInTalk } from 'react-icons/md'
+import MobNavlinks from './MobNavlinks'
+import Link from 'next/link'
 
-export const MobileMenu = ({ navLinks, isMobileMenuOpen, openDropdown, toggleDropdown }) => {
+export const MobileMenu = ({ isMobileMenuOpen, openDropdown, toggleDropdown, setIsMobileMenuOpen }) => {
     return (
         <div
             className={`fixed top-0 left-0 h-full bg-white z-40 p-6 transition-transform transform ${isMobileMenuOpen ? "translate-x-0 visible opacity-100" : "-translate-x-full invisible opacity-0"
@@ -11,30 +13,28 @@ export const MobileMenu = ({ navLinks, isMobileMenuOpen, openDropdown, toggleDro
             style={{ width: "70%" }}
         >
             <div className="mt-16 border-t-2 pt-8">
-                {navLinks.map((link, index) => (
+                {MobNavlinks.map((link, index) => (
                     <div key={index} className="mb-4">
-                        <div className="flex">
-                            <div
-                                className="text-md border-b-2 w-full pb-2 font-medium flex items-center justify-between cursor-pointer"
-                                onClick={() => toggleDropdown(index)}
-                            >
+                        <div className="flex" onClick={() => toggleDropdown(index)}>
+                            <span className="text-sm border-b-2 w-full pb-2 font-normal flex items-center justify-between cursor-pointer">
                                 {link.name}
-                                <span>
-                                    <MdOutlineKeyboardArrowRight
-                                        size={20}
-                                        className={`transition-transform ${openDropdown === index ? "rotate-90" : ""
-                                            }`}
-                                    />
-                                </span>
-                            </div>
+                                <MdOutlineKeyboardArrowRight
+                                    size={18}
+                                    className={`transition-transform ${openDropdown === index ? "rotate-90" : ""}`}
+                                />
+                            </span>
                         </div>
                         {openDropdown === index && (
-                            <ul className="mt-2 space-y-2 border-b-2 py-1">
-                                {link.subItems.map((subItem, idx) => (
-                                    <li key={idx} className="pl-4 text-gray-600">
-                                        {subItem}
-                                    </li>
-                                ))}
+                            <ul className="mt-2 space-y-2 border-b-2 py-1 text-sm">
+                                {link.subItems.map((subItem, idx) => {
+                                    const formattedName = link.name.toLowerCase() === "legal, book keeping and compliance" ? "legal-book-keeping-and-compliance" : link.name.toLowerCase().replace(/\s+/g, "-");
+                                    const href = `/collections/${idx === 0 ? formattedName : subItem.toLowerCase().replace(/\s+/g, "-")}`;
+                                    return (
+                                        <li key={idx} className="pl-4 text-gray-700 cursor-pointer">
+                                            <Link href={href} onClick={() => setIsMobileMenuOpen(false)}>{subItem}</Link>
+                                        </li>
+                                    );
+                                })}
                             </ul>
                         )}
                     </div>
