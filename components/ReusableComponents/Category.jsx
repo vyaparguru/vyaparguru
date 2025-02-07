@@ -3,8 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { IoMdArrowForward } from "react-icons/io";
-import FaqSection from "./HomeScreen/Accordion";
-import LetsTalk from "./HomeScreen/Letstalk";
+import FaqSection from "../HomeScreen/Accordion";
+import LetsTalk from "../HomeScreen/Letstalk";
 
 export default function Category({
   bannerImage,
@@ -16,7 +16,7 @@ export default function Category({
   return (
     <>
       <div className="py-36 md:py-64 lg:py-36 px-5 md:px-10 lg:px-44">
-        <div className="relative text-white px-6 py-12 md:py-16 mb-12 text-center rounded-lg overflow-hidden">
+        <div className="relative text-white px-6 py-10 md:py-16 mb-12 text-center rounded-lg overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${bannerImage.src})` }}
@@ -62,11 +62,11 @@ export default function Category({
                     className="rounded-lg mb-4 w-[30rem] h-[200px] lg:w-[20rem] lg:h-[180px]"
                   />
                 <Link href={`/collections/${title.toLowerCase().replace(/\s+/g, '-')}`}>
-                  <h3 className="font-semibold text-2xl">{title}</h3>
+                  <h3 className="font-semibold text-xl ">{title}</h3>
                 </Link>
                 <ul className="mt-4 mb-7 md:mb-0 space-y-2">
                   {services.map((service, i) => (
-                    <li key={i} className="text-gray-700 text-lg py-1 cursor-pointer">
+                    <li key={i} className="text-gray-700 text-md py-1 cursor-pointer">
                       <Link href={`/collections/${service.toLowerCase().replace(/\s+/g, '-')}`}>
                         {service}
                       </Link>

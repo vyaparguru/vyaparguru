@@ -1,6 +1,6 @@
 "use client"
 
-import Category from '@/components/Category'
+import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 import banner from "@/public/banner1.jpg"
 import { PiMetaLogo } from "react-icons/pi";

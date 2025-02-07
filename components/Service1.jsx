@@ -1,4 +1,3 @@
-// pages/index.js
 "use client"
 import Link from "next/link";
 import seo from "../public/banner2.jpg";

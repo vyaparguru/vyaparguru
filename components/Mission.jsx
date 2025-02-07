@@ -1,8 +1,7 @@
-// components/Mission.js
 "use client"
 import Image from "next/image";
-import missionImage from "../public/banner1.jpg"; // Replace with the actual image path
-import profileImage from "../public/banner2.jpg"; // Replace with the actual profile path
+import missionImage from "../public/banner1.jpg";
+import profileImage from "../public/banner2.jpg";
 
 const Mission = () => {
   return (
@@ -14,13 +13,13 @@ const Mission = () => {
             We Help to Create <span className="text-blue-500">Strategies</span>, Design
           </h2>
           <p className="mt-4 text-gray-600 text-lg">
-          
-We specialize in crafting effective strategies and innovative designs that empower your business to stand out, grow, and succeed. Our team combines creativity with strategic thinking to deliver tailored solutions that align with your goals, ensuring impactful results and a lasting impression.
+
+            We specialize in crafting effective strategies and innovative designs that empower your business to stand out, grow, and succeed. Our team combines creativity with strategic thinking to deliver tailored solutions that align with your goals, ensuring impactful results and a lasting impression.
           </p>
           {/* Testimonial Section */}
           <div className="mt-6 p-6 bg-blue-100 rounded-md shadow-md">
             <p className="text-gray-700">
-            Our mission is to deliver innovative solutions that empower businesses to achieve their goals. At Vyapar Guru Infotech Pvt Ltd, we are committed to excellence, building trust, and driving meaningful impact for every client we serve.
+              Our mission is to deliver innovative solutions that empower businesses to achieve their goals. At Vyapar Guru Infotech Pvt Ltd, we are committed to excellence, building trust, and driving meaningful impact for every client we serve.
             </p>
             {/* Profile Details */}
             <div className="mt-4 flex items-center gap-4">
