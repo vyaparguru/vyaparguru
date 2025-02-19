@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import procedure from "@/public/banner1.jpg";
+import procedure from "@/public/solution.jpg";
 
 export const Procedure = () => {
   return (
@@ -9,8 +9,8 @@ export const Procedure = () => {
         <Image
           src={procedure} 
           alt="Procedure"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className="object-contain rounded-lg"
         />
       </div>

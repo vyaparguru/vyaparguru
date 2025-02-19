@@ -3,7 +3,8 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/lr.jpg"
+import gst from "@/public/gst.jpg"
 import { MdOutlinePayments, MdPayment } from 'react-icons/md';
 import { FaIdCard, FaTrademark } from 'react-icons/fa';
 
@@ -19,7 +20,7 @@ export default function LicensesAndRegistrations() {
   ];
 
   const marketingCategories = [
-    { title: "GST", services: [], image: banner },
+    { title: "GST", services: [], image: gst },
     // { title: "Whatsapp Marketing", services: [], image: banner },
   ];
 

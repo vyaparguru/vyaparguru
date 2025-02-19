@@ -3,21 +3,23 @@
 import Image from "next/image";
 import { FaBolt, FaCheckCircle, FaClock, FaDollarSign, FaHandHoldingUsd, FaPhoneAlt } from "react-icons/fa"; 
 import { FaPerson } from "react-icons/fa6";
-import profileImg from "../../public/banner1.jpg"; 
+import profileImg from "../../public/whyus.jpg"; 
 import Testimonials from "@/components/HomeScreen/Testimonials";
 import LetsTalk from "@/components/HomeScreen/Letstalk";
 
 const WhyUs = () => {
   return (
     <>
-    <section className="bg-white py-28 pb-20 md:py-44 md:pb-20 px-6 md:px-20 lg:px-40">
-      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+    <section className="bg-white py-32 pb-20 md:py-40 md:pb-20 px-6 md:px-20 lg:px-40">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-10">
         {/* Left Section */}
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 px-5">
           <Image
             src={profileImg}
             alt="Professional"
             className="rounded-lg shadow-lg"
+            width={500}
+            height={300}
           />
         </div>
 

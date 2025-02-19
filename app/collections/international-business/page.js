@@ -3,7 +3,8 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/ib.jpg"
+import di from "@/public/di.jpg"
 import { MdOutlinePayments, MdPayment } from 'react-icons/md';
 import { FaGlobe, FaTrademark } from 'react-icons/fa';
 
@@ -19,7 +20,7 @@ export default function InternationalBusiness() {
   ];
 
   const marketingCategories = [
-    { title: "Dubai Incorporation", services: [], image: banner },
+    { title: "Dubai Incorporation", services: [], image: di },
     // { title: "Whatsapp Marketing", services: [], image: banner },
   ];
 

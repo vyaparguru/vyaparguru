@@ -3,8 +3,9 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
-import { FaFileSignature, FaTrademark } from 'react-icons/fa';
+import banner from "@/public/br.jpg"
+import pl from "@/public/pl.jpg"
+import { FaFileSignature } from 'react-icons/fa';
 
 export default function BusinessRegistration() {
 
@@ -18,7 +19,7 @@ export default function BusinessRegistration() {
   ];
 
   const marketingCategories = [
-    { title: "Private Limited Company", services: [], image: banner },
+    { title: "Private Limited Company", services: [], image: pl },
     // { title: "Whatsapp Marketing", services: [], image: banner },
   ];
 

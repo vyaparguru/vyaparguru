@@ -1,17 +1,17 @@
 "use client";
 import Image from "next/image";
-import profileImg from "@/public/banner1.jpg"; // Replace with your image path
+import profileImg from "@/public/about.jpg"; 
 
 export const HomeAbout = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-40 py-10 md:py-20 bg-white">
       {/* Left Section - Image */}
-      <div className="hidden md:block ">
+      <div className="hidden md:flex justify-end px-10">
         <div className="overflow-hidden rounded-lg shadow-lg">
           <Image
             src={profileImg}
             alt="About Us Image"
-            className="object-cover w-[550px] h-[600px]"
+            className="object-cover w-[460px] h-[500px]"
           />
         </div>
       </div>

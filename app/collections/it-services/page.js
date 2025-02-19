@@ -3,7 +3,8 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/it.jpg"
+import wd from "@/public/wd.jpg"
 import { FaWix } from 'react-icons/fa';
 
 export default function IT() {
@@ -17,7 +18,7 @@ export default function IT() {
   ];
 
   const marketingCategories = [
-    { title: "Website Designing", services: ["Wix"], image: banner },
+    { title: "Website Designing", services: ["Wix"], image: wd },
   ];
 
   return (

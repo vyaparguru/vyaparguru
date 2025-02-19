@@ -12,11 +12,12 @@ export const DesktopMenu = () => {
       {DesktopNavlinks.map((menu, index) => (
         <div key={index} className="relative" onMouseEnter={() => setOpenDropdown(index)} onMouseLeave={() => setOpenDropdown(null)}>
           <Link
-            href={`/collections/${menu.name.toLowerCase().replace(/\s+/g, "-")}`}
+            href={`/collections/${menu.name.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-")}`}
             className="border border-blue-100 mb-2 bg-blue-100 p-2 rounded-xl block"
           >
             {menu.name}
           </Link>
+
           {openDropdown === index && (
             <div
               className="absolute left-0 mt-0 w-52 bg-white border border-gray-200 rounded-lg shadow-lg z-10"

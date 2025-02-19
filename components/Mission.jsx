@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
-import missionImage from "../public/banner1.jpg";
-import profileImage from "../public/banner2.jpg";
+import missionImage from "../public/strategies.jpg";
+import profileImage from "../public/footerlogo.png";
 
 const Mission = () => {
   return (
@@ -26,7 +26,7 @@ const Mission = () => {
               <Image
                 src={profileImage}
                 alt="image1"
-                className="w-12 h-12 rounded-full object-cover"
+                className="w-9 h-9 "
               />
               <div>
                 <h4 className="text-lg font-bold text-black">Saras Kohli</h4>
@@ -41,7 +41,7 @@ const Mission = () => {
           <Image
             src={missionImage}
             alt="image2"
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md "
           />
         </div>
       </div>

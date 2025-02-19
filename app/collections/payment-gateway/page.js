@@ -3,7 +3,10 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/pg.jpg"
+import rp from "@/public/rp.jpg"
+import cf from "@/public/cf.jpg"
+
 import { MdOutlinePayments, MdPayment } from 'react-icons/md';
 
 export default function PaymentGateway() {
@@ -18,8 +21,8 @@ export default function PaymentGateway() {
   ];
 
   const marketingCategories = [
-    { title: "Sell on Amazon", services: [], image: banner },
-    // { title: "Whatsapp Marketing", services: [], image: banner },
+    { title: "Razorpay", services: [], image: rp },
+    { title: "Cashfree", services: [], image: cf },
   ];
 
   return (

@@ -3,8 +3,8 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
-import { MdOutlinePayments, MdPayment } from 'react-icons/md';
+import banner from "@/public/ti.jpg"
+import tr from "@/public/tr.jpg"
 import { FaTrademark } from 'react-icons/fa';
 
 export default function TrademarkAndIP() {
@@ -19,7 +19,7 @@ export default function TrademarkAndIP() {
   ];
 
   const marketingCategories = [
-    { title: "Trademark Registration", services: [], image: banner },
+    { title: "Trademark Registration", services: [], image: tr},
     // { title: "Whatsapp Marketing", services: [], image: banner },
   ];
 

@@ -53,13 +53,13 @@ export default function Category({
           <span className="text-gray-700 text-2xl font-semibold mb-6 ">
             Explore {title}
           </span>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-0 mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 md:gap-6 mt-4">
             {categories.map(({ title, services, image }, index) => (
-              <div key={index} className="bg-white flex flex-col">
+              <div key={index} className="bg-white flex flex-col ">
                   <Image
                     alt="image1"
                     src={image}
-                    className="rounded-lg mb-4 w-[30rem] h-[200px] lg:w-[20rem] lg:h-[180px]"
+                    className="rounded-lg mb-4 w-[30rem] h-[200px] lg:w-[20rem] lg:h-[180px] hover:border-b-2 border-blue-500"
                   />
                 <Link href={`/collections/${title.toLowerCase().replace(/\s+/g, '-')}`}>
                   <h3 className="font-semibold text-xl ">{title}</h3>

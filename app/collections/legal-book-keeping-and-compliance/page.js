@@ -3,9 +3,10 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
-import { PiMetaLogo } from "react-icons/pi";
-import { TbSettingsBolt } from "react-icons/tb";
+import banner from "@/public/legal.jpg"
+import tx from "@/public/tx.jpg"
+import ti from "@/public/ti.jpg"
+
 import { MdGavel } from 'react-icons/md';
 import { FaTrademark } from 'react-icons/fa';
 
@@ -21,8 +22,8 @@ export default function legal() {
   ];
 
   const marketingCategories = [
-    { title: "Taxation", services: ["GST Filing"], image: banner },
-    { title: "Trademark and IP", services: ["Trademark Registration"], image: banner },
+    { title: "Taxation", services: ["GST Filing"], image: tx },
+    { title: "Trademark and IP", services: ["Trademark Registration"], image: ti },
   ];
 
   return (

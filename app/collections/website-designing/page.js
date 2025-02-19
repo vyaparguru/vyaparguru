@@ -3,7 +3,8 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/wd.jpg"
+import wx from "@/public/wx.jpg"
 import { MdOutlinePayments, MdPayment } from 'react-icons/md';
 import { FaWix } from 'react-icons/fa';
 
@@ -19,7 +20,7 @@ export default function WebsiteDesigning() {
   ];
 
   const marketingCategories = [
-    { title: "Wix", services: [], image: banner },
+    { title: "Wix", services: [], image: wx },
     // { title: "Whatsapp Marketing", services: [], image: banner },
   ];
 

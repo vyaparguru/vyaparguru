@@ -3,7 +3,10 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/business.jpg"
+import lr from "@/public/lr.jpg"
+import ib from "@/public/ib.jpg"
+import br from "@/public/br.jpg"
 import {  FaFileSignature, FaGlobe, FaIdCard } from 'react-icons/fa';
 
 export default function BusinessSetup() {
@@ -19,9 +22,9 @@ export default function BusinessSetup() {
   ];
 
   const marketingCategories = [
-    { title: "Business Registration", services: ["Private Limited Company"], image: banner },
-    { title: "International Business", services: ["Dubai Incorportion"], image: banner },
-    { title: "Licenses and Registrations", services: ["GST"], image: banner },
+    { title: "Business Registration", services: ["Private Limited Company"], image: br },
+    { title: "International Business", services: ["Dubai Incorportion"], image: ib },
+    { title: "Licenses and Registrations", services: ["GST"], image: lr },
   ];
 
   return (

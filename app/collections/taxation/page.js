@@ -3,7 +3,8 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/tx.jpg"
+import gf from "@/public/gf.jpg"
 import { MdGavel, MdOutlinePayments, MdPayment } from 'react-icons/md';
 
 export default function Taxation() {
@@ -18,7 +19,7 @@ export default function Taxation() {
   ];
 
   const marketingCategories = [
-    { title: "GST Filing", services: [], image: banner },
+    { title: "GST Filing", services: [], image: gf },
     // { title: "Whatsapp Marketing", services: [], image: banner },
   ];
 

@@ -13,6 +13,17 @@ export default function Layout({ children }) {
     <html lang="en">
       <head>
         <title>Vyapar Guru Infotech</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PLTZ7K4XW"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1PLTZ7K4XW');
+            `,
+          }}
+        />
       </head>
       <body>
         <Navbar /> 

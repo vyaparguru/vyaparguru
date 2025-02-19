@@ -1,21 +1,21 @@
 "use client"
 
 import Image from "next/image";
-import profileImg from "../../public/banner1.jpg"; 
+import profileImg from "../../public/about.jpg"; 
 import LetsTalk from "@/components/HomeScreen/Letstalk";
 import Mission from "@/components/Mission";
 
 export const About = () => {
   return (
     <>
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-40 pt-24 pb-10 md:pt-24 md:py-24 bg-white">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-40 pt-24 pb-10  md:py-32 bg-white">
       {/* Left Section - Image */}
-      <div className="block pt-5">
+      <div className="block pt-5 px-10">
         <div className="overflow-hidden rounded-lg shadow-lg">
           <Image
             src={profileImg}
             alt="About Us Image"
-            className="object-cover md:w-[550px] md:h-[600px]"
+            className="object-cover md:w-[460px] md:h-[500px]"
           />
         </div>
       </div>

@@ -3,7 +3,9 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/marketing.jpg"
+import dm from "@/public/dm.jpg"
+import wm from "@/public/wm.webp"
 import { PiMetaLogo } from "react-icons/pi";
 import { TbSettingsBolt } from "react-icons/tb";
 
@@ -19,8 +21,8 @@ export default function Marketing() {
   ];
 
   const marketingCategories = [
-    { title: "Digital Marketing", services: ["Social Media Management", "Meta Ads"], image: banner },
-    { title: "Whatsapp Marketing", services: [], image: banner },
+    { title: "Digital Marketing", services: ["Social Media Management", "Meta Ads"], image: dm },
+    { title: "Whatsapp Marketing", services: [], image: wm},
   ];
 
   return (

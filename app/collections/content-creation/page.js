@@ -3,7 +3,8 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/content.jpg"
+import gd from "@/public/gd.jpg"
 import { FaPaintBrush } from 'react-icons/fa';
 
 export default function ContentCreation() {
@@ -17,7 +18,7 @@ export default function ContentCreation() {
   ];
 
   const marketingCategories = [
-    { title: "Graphic Designing", services: [""], image: banner },
+    { title: "Graphic Designing", services: [""], image: gd },
   ];
 
   return (

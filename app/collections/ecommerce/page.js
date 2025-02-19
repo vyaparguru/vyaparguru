@@ -3,7 +3,9 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/ecom.jpg"
+import os from "@/public/os.jpg"
+import pg from "@/public/pg.jpg"
 import { MdOutlinePayments, MdPayment } from 'react-icons/md';
 import { FaAmazon } from 'react-icons/fa';
 
@@ -20,8 +22,8 @@ export default function Ecommerce() {
   ];
 
   const marketingCategories = [
-    { title: "Online Selling", services: ["Sell on Amazon"], image: banner },
-    { title: "Payment Gateway", services: ["Razorpay", "Cashfree"], image: banner },
+    { title: "Online Selling", services: ["Sell on Amazon"], image: os },
+    { title: "Payment Gateway", services: ["Razorpay", "Cashfree"], image: pg },
   ];
 
   return (

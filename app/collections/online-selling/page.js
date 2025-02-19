@@ -3,7 +3,8 @@
 import Category from '@/components/ReusableComponents/Category'
 import React from 'react'
 
-import banner from "@/public/banner1.jpg"
+import banner from "@/public/os.jpg"
+import soa from "@/public/soa.jpg"
 import { PiMetaLogo } from "react-icons/pi";
 import { TbSettingsBolt } from "react-icons/tb";
 import { FaAmazon } from 'react-icons/fa';
@@ -19,7 +20,7 @@ export default function OnlineSelling() {
   ];
 
   const marketingCategories = [
-    { title: "Sell on Amazon", services: [], image: banner },
+    { title: "Sell on Amazon", services: [], image: soa },
     // { title: "Whatsapp Marketing", services: [], image: banner },
   ];
 
