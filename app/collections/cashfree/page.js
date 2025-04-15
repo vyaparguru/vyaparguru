@@ -31,6 +31,7 @@ export default function Cashfree() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/cf.jpg"
         />
     );
 }

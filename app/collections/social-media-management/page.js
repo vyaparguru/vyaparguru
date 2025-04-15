@@ -20,7 +20,7 @@ export default function SocialMedia() {
 
     const info = [{
         title: "Social Media Management",
-        src: "/sm.jpg",
+        src: "/sm.png",
         route: "social-media-management",
     }]
 
@@ -31,6 +31,7 @@ export default function SocialMedia() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/smm.webp" 
         />
     );
 }

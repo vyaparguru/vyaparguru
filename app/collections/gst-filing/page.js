@@ -20,7 +20,7 @@ export default function GSTFiling() {
 
     const info = [{
         title: "GST Filing",
-        src: "/404.webp",
+        
         route: "gst-filing",
     }]
 
@@ -31,6 +31,7 @@ export default function GSTFiling() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/gf.jpg"
         />
     );
 }

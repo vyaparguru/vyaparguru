@@ -31,6 +31,7 @@ export default function DubaiIncorporation() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/di.jpg"
         />
     );
 }

@@ -31,6 +31,7 @@ export default function SellOnAmazon() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/soa.jpg"
         />
     );
 }

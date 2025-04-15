@@ -31,6 +31,7 @@ export default function TrademarkRegistration() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/tr.jpg"
         />
     );
 }

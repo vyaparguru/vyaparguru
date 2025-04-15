@@ -5,23 +5,20 @@ import Service from '@/components/ReusableComponents/Service';
 
 export default function WhatsappMarketing() {
     const services = [
-        { name: "WhatsApp API Setup", slug: "whatsapp-api-setup",src:"/banner1.jpg" },
-        { name: "Meta Business Verification", slug: "meta-business-verification" },
-        { name: "WhatsApp Marketing Campaign Management", slug: "whatsApp-marketing-campaign-management" },
-        { name: "WhatsApp Chatbot Setup", slug: "whatsapp-chatbot-setup" },
-    ];
-
-    const tools = [
-        { name: "AISensy", slug: "aisensy" },
+        { name: "", slug: "",src:"/banner1.jpg" },
         // { name: "Meta Business Verification", slug: "meta-business-verification" },
         // { name: "WhatsApp Marketing Campaign Management", slug: "whatsApp-marketing-campaign-management" },
         // { name: "WhatsApp Chatbot Setup", slug: "whatsapp-chatbot-setup" },
     ];
 
+    const tools = [
+        { name: "", slug: "" },
+    ];
+
     const info = [{
-        title: "WhatsApp Marketing",
-        src: "/404.webp",
-        route: "whatsapp-marketing",
+        title: "Visiting Cards",
+        // src: "/404.webp",
+        route: "visiting-cards",
     }]
 
     return (
@@ -31,7 +28,7 @@ export default function WhatsappMarketing() {
             services={services}
             tools={tools}
             route={info[0].route}
-            image="/wm.webp"
+            image="/vc.jpg"
         />
     );
 }

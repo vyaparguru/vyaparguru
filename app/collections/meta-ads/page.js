@@ -31,6 +31,7 @@ export default function MetaAds() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/ma.jpeg"
         />
     );
 }

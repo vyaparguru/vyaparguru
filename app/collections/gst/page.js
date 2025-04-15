@@ -31,6 +31,7 @@ export default function GST() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/gst.jpg"
         />
     );
 }

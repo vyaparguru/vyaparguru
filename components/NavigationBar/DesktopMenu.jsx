@@ -13,7 +13,7 @@ export const DesktopMenu = () => {
         <div key={index} className="relative" onMouseEnter={() => setOpenDropdown(index)} onMouseLeave={() => setOpenDropdown(null)}>
           <Link
             href={`/collections/${menu.name.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-")}`}
-            className="border border-blue-100 mb-2 bg-blue-100 p-2 rounded-xl block"
+            className="border border-blue-100 mb-2 bg-blue-100 p-2 rounded-xl block whitespace-nowrap"
           >
             {menu.name}
           </Link>

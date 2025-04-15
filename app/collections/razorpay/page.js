@@ -31,6 +31,7 @@ export default function Razorpay() {
             services={services}
             tools={tools}
             route={info[0].route}
+            image="/rp.jpg"
         />
     );
 }
