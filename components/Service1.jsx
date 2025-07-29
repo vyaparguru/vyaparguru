@@ -28,7 +28,7 @@ const Service1 = () => {
           <Image
             src={seo} 
             alt="SEO"
-            className="rounded-lg md:h-[450px] md:w-auto" // Increased height for desktop
+            className="rounded-lg md:h-[450px] md:w-auto" 
           />
         </div>
       </div>

@@ -7,7 +7,7 @@ const MobNavlinks = [
     },
     {
       name: "eCommerce",
-      subItems: ["Go to eCommerce","Online Selling", "Payment Gateway"],
+      subItems: ["Go to eCommerce","Logistics","Online Selling", "Payment Gateway"],
     },
     {
       name: "IT Services",

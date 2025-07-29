@@ -9,7 +9,7 @@ const DesktopNavlinks = [
     {
       name: "eCommerce",
       href: "/collections/ecommerce",
-      subItems: ["Online Selling", "Payment Gateway"],
+      subItems: ["Logistics","Online Selling", "Payment Gateway"],
     },
     {
       name: "IT Services",
