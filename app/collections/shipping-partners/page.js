@@ -1,20 +1,19 @@
 "use client"
-import Link from 'next/link';
-import Image from 'next/image';
+
 import Service from '@/components/ReusableComponents/Service';
 
 export default function ShippingPartners() {
     const services = [
-        { name: "", slug: "",src:"/banner1.jpg" },
+        { name: "", slug: "",src:"" },
     ];
 
     const tools = [
-        { name: "", slug: "" },
+        { name: "Shiprocket", slug: "shiprocket",src:"/sr.jpg" },
     ];
 
     const info = [{
         title: "Shipping Partners",
-        src: "/404.webp",
+        src: "/sp.jpg",
         route: "shipping-partners",
     }]
 
@@ -25,7 +24,7 @@ export default function ShippingPartners() {
             services={services}
             tools={tools}
             route={info[0].route}
-            image="/tr.jpg"
+            image="/sp.jpg"
         />
     );
 }

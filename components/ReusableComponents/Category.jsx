@@ -59,7 +59,7 @@ export default function Category({
                   <Image
                     alt="image1"
                     src={image}
-                    className="rounded-lg mb-4 w-[30rem] h-[200px] lg:w-[20rem] lg:h-[180px] hover:border-b-2 border-blue-500"
+                    className="rounded-lg mb-4 w-[30rem] h-[200px] lg:w-[20rem] lg:h-[180px]"
                   />
                 <Link href={`/collections/${title.toLowerCase().replace(/\s+/g, '-')}`}>
                   <h3 className="font-semibold text-xl ">{title}</h3>
