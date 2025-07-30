@@ -12,7 +12,7 @@ export default function ReferralPage({
   buttonLabel = 'Sign up for free',
 }) {
   return (
-    <div className="max-w-6xl mx-auto bg-white dark:bg-zinc-900 rounded-3xl shadow-md overflow-hidden flex flex-col md:flex-row items-center gap-8 p-6 md:p-10 border border-zinc-200 dark:border-zinc-800">
+    <div className="max-w-6xl mx-auto bg-white dark:bg-zinc-900 rounded-3xl shadow-md overflow-hidden flex flex-col md:flex-row items-center gap-10 p-6 md:p-10 border border-zinc-200 dark:border-zinc-800">
       <div className="w-full md:w-1/2 aspect-video md:aspect-square rounded-xl overflow-hidden">
         <img src={imageUrl} alt="image1" className="w-full h-full object-cover" />
       </div>

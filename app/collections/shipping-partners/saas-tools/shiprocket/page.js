@@ -14,7 +14,7 @@ export default function Page() {
           'Early COD remittance'
         ]}
         rating={4.5}
-        referralLink="https://example.com/vivomeetings?ref=your-code"
+        referralLink="https://app.shiprocket.in/register?utm_source=Channel_Partner&utm_term=SRCP0445"
         buttonLabel="Sign up for free"
       />
     </div>
