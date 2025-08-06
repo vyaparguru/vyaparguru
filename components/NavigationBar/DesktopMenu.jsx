@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import DesktopNavlinks from "./DesktopNavlinks";
+import DesktopNavlinks from "../../utils/DesktopNavlinks";
 
 export const DesktopMenu = () => {
   const [openDropdown, setOpenDropdown] = useState(null);

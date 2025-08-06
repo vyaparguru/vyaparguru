@@ -15,7 +15,7 @@ import logo from "@/public/logo.png";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { MobileMenu } from "./MobileMenu";
 import { DesktopMenu } from "./DesktopMenu";
-import DesktopNavlinks from "./DesktopNavlinks";
+import DesktopNavlinks from "../../utils/DesktopNavlinks";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -184,7 +184,6 @@ const Navbar = () => {
           toggleDropdown={toggleDropdown}
         />
       </div>
-
     </nav>
   );
 };

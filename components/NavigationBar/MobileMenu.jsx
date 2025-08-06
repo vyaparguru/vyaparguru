@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { MdOutlineKeyboardArrowRight, MdOutlinePhoneInTalk } from 'react-icons/md'
-import MobNavlinks from './MobNavlinks'
+import MobNavlinks from '../../utils/MobNavlinks'
 import Link from 'next/link'
 
 export const MobileMenu = ({ isMobileMenuOpen, openDropdown, toggleDropdown, setIsMobileMenuOpen }) => {

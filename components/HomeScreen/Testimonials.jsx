@@ -4,22 +4,22 @@ import Link from "next/link";
 
 const testimonials = [
   {
-    text: "The team at Vyapar Guru Infotech Pvt Ltd is highly knowledgeable and dedicated. They provided innovative solutions that transformed our operations.",
+    text: "Our new website brought in walk-ins and online orders. It made our paint brand look truly premium",
     name: "Kayson Paints",
     website: "https://www.kaysonpaints.com/",
     displayUrl: "kaysonpaints.com",
   },
   {
-    text: "The team at Vyapar Guru Infotech Pvt Ltd is highly knowledgeable and dedicated. They provided innovative solutions that transformed our operations.",
-    name: "Voltas Engineering",
-    website: "https://www.voltasengineering.com",
-    displayUrl: "voltasengineering.com",
+    text: "The team is highly knowledgeable and dedicated. They provided innovative solutions that transformed our operations.",
+    name: "ITDC Punjab",
+    website: "https://itdcpunjab.com/",
+    displayUrl: "itdcpunjab.com",
   },
   {
-    text: "The team at Vyapar Guru Infotech Pvt Ltd is highly knowledgeable and dedicated. They provided innovative solutions that transformed our operations.",
-    name: "Akal Educational Society",
-    website: "https://www.akaledusociety.com",
-    displayUrl: "akaledusociety.com",
+    text: "The website perfectly reflects my design style. Clients now discover my work even before we meet.",
+    name: "Emphasis Architects",
+    website: "https://emphasisarchitects.com/",
+    displayUrl: "emphasisarchitects.com",
   },
 ];
 

@@ -5,7 +5,6 @@ import profileImg from "@/public/about.jpg";
 export const HomeAbout = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-40 py-10 md:py-20 bg-white">
-      {/* Left Section - Image */}
       <div className="hidden md:flex justify-end px-10">
         <div className="overflow-hidden rounded-lg shadow-lg">
           <Image
@@ -16,7 +15,6 @@ export const HomeAbout = () => {
         </div>
       </div>
 
-      {/* Right Section - Content */}
       <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
         <h3 className="text-blue-500 text-lg uppercase">
           About Us
@@ -28,7 +26,6 @@ export const HomeAbout = () => {
         At Vyapar Guru Infotech, we provide tailored service solutions designed to meet your unique needs. Our expert team focuses on innovation and excellence to deliver results that drive success. Partner with us for solutions that inspire, empower, and transform your business.
         </p>
 
-        {/* Statistics */}
         <div className="grid grid-cols-3 gap-4 md:gap-8 text-center md:text-left">
           <div>
             <p className="text-blue-500 text-md md:text-lg">Websites</p>

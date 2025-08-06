@@ -2,29 +2,26 @@
 import { useEffect, useState } from "react";
 
 export const Figures = () => {
-  // State for storing the target numbers
   const targets = [200, 100, 25, 50];
   
-  // State for the current numbers being displayed
   const [count, setCount] = useState([0, 0, 0, 0]);
 
-  // Countdown logic
   useEffect(() => {
     const intervalIds = targets.map((target, index) => {
       return setInterval(() => {
         setCount((prevCount) => {
           const newCount = [...prevCount];
           if (newCount[index] < target) {
-            newCount[index] += Math.ceil(target / 100); // Increment in smaller steps
+            newCount[index] += Math.ceil(target / 100);
           } else {
-            clearInterval(intervalIds[index]); // Stop interval once target is reached
+            clearInterval(intervalIds[index]);
           }
           return newCount;
         });
-      }, 20); // Adjust the speed of the animation here
+      }, 20); 
     });
 
-    return () => intervalIds.forEach((id) => clearInterval(id)); // Cleanup intervals on unmount
+    return () => intervalIds.forEach((id) => clearInterval(id)); 
   }, []);
 
   return (
