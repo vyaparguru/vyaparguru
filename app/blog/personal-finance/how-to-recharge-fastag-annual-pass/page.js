@@ -1,4 +1,21 @@
-import Head from "next/head";
+export const metadata = {
+    title: "How to Recharge FASTag Annual Pass Online | Price, Benefits & Renewal Guide",
+    description: "Learn how to recharge or renew your FASTag Annual Pass online. Check price, benefits, eligibility, and step-by-step guide for FASTag recharge on NHAI & official platforms.",
+    keywords: ["FASTag", "FASTag Annual Pass", "NHAI", "Toll Payment", "FASTag Recharge"],
+    authors: [{ name: "NHAI Updates" }],
+    openGraph: {
+        title: "How to Recharge FASTag Annual Pass | NHAI Guide",
+        description: "Step-by-step guide to buy, recharge, or renew FASTag Annual Pass online. Includes benefits, validity, and how to download statements.",
+        images: ["/images/fastag-cover.jpeg"],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "How to Recharge FASTag Annual Pass | NHAI Guide",
+        description: "Step-by-step guide to buy, recharge, or renew FASTag Annual Pass online.",
+        images: ["/images/fastag-cover.jpeg"],
+    },
+};
 
 export default function FastagAnnualPass() {
     return (
