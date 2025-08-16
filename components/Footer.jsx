@@ -12,6 +12,7 @@ const quickLinks = [
   { name: "Services", href: "/services" },
   { name: "Why Us", href: "/why-us" },
   { name: "Contact", href: "/contact" },
+  { name: "Blog", href: "/blog/personal-finance/how-to-recharge-fastag-annual-pass" },
 ];
 
 const services = [
