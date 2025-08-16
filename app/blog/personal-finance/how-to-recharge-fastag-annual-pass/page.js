@@ -6,14 +6,14 @@ export const metadata = {
     openGraph: {
         title: "How to Recharge FASTag Annual Pass | NHAI Guide",
         description: "Step-by-step guide to buy, recharge, or renew FASTag Annual Pass online. Includes benefits, validity, and how to download statements.",
-        images: ["/images/fastag-cover.jpeg"],
+        images: ["/fastag-cover.jpg"],
         type: "article",
     },
     twitter: {
         card: "summary_large_image",
         title: "How to Recharge FASTag Annual Pass | NHAI Guide",
         description: "Step-by-step guide to buy, recharge, or renew FASTag Annual Pass online.",
-        images: ["/images/fastag-cover.jpeg"],
+        images: ["/fastag-cover.jpg"],
     },
 };
 
