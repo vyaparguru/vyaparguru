@@ -19,33 +19,6 @@ export const metadata = {
 
 export default function FastagAnnualPass() {
     return (
-        <>
-            <Head>
-                <title>How to Recharge FASTag Annual Pass Online | Price, Benefits & Renewal Guide</title>
-                <meta
-                    name="description"
-                    content="Learn how to recharge or renew your FASTag Annual Pass online. Check price, benefits, eligibility, and step-by-step guide for FASTag recharge on NHAI & official platforms."
-                />
-                <meta name="keywords" content="FASTag, FASTag Annual Pass, NHAI, Toll Payment, FASTag Recharge" />
-                <meta name="author" content="NHAI Updates" />
-
-                <meta property="og:title" content="How to Recharge FASTag Annual Pass | NHAI Guide" />
-                <meta
-                    property="og:description"
-                    content="Step-by-step guide to buy, recharge, or renew FASTag Annual Pass online. Includes benefits, validity, and how to download statements."
-                />
-                <meta property="og:image" content="/images/fastag-cover.jpeg" />
-                <meta property="og:type" content="article" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="How to Recharge FASTag Annual Pass | NHAI Guide" />
-                <meta
-                    name="twitter:description"
-                    content="Step-by-step guide to buy, recharge, or renew FASTag Annual Pass online."
-                />
-                <meta name="twitter:image" content="/images/fastag-cover.jpeg" />
-            </Head>
-
             <div className="min-h-screen pt-32 md:py-40">
                 <div className="max-w-6xl mx-auto bg-white overflow-hidden">
                     <div className="p-5 md:p-8">
@@ -175,6 +148,5 @@ export default function FastagAnnualPass() {
                     </div>
                 </div>
             </div>
-        </>
     )
 }
