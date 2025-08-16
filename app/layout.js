@@ -2,6 +2,7 @@ import './../globals.css';
 import Navbar from '../components/NavigationBar/Navbar';
 import Footer from '../components/Footer';
 import WhatsappButton from '@/components/WhatsappButton';
+import Script from 'next/script';
 
 export const metadata = {
   title: "Vyapar Guru Infotech Pvt Ltd",
@@ -11,10 +12,9 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <title>Vyapar Guru Infotech</title>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PLTZ7K4XW"></script>
-        <script
+      <body>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1PLTZ7K4XW"/>        
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -24,8 +24,6 @@ export default function Layout({ children }) {
             `,
           }}
         />
-      </head>
-      <body>
         <Navbar /> 
         <main>{children}</main> 
         <Footer/>
