@@ -6,7 +6,6 @@ import Image from "next/image";
 import {
   CiHeart,
   CiPhone,
-  CiSearch,
   CiShoppingCart,
   CiUser,
 } from "react-icons/ci";
@@ -16,10 +15,11 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { MobileMenu } from "./MobileMenu";
 import { DesktopMenu } from "./DesktopMenu";
 import DesktopNavlinks from "../../utils/DesktopNavlinks";
+import DesktopSearchBar from "./DesktopSearchBar";
+import MobileSearchBar from "./MobileSearchBar";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchDropdown, setSearchDropdown] = useState(false);
   const [PCSearchDropdown, setPCSearchDropdown] = useState(false);
@@ -96,32 +96,14 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col justify-between md:items-start w-full gap-2">
           <div className="flex space-x-1 w-full ">
-            <div className="hidden md:flex flex-1 mx-4 z-10" ref={searchBoxRef}>
-              <div className="relative w-full">
-                <CiSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 w-6 h-6" />
-                <input
-                  type="text"
-                  placeholder="Search for services"
-                  value={searchQuery}
-                  onChange={handleSearch}
-                  className="w-full pl-12 py-2 border rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  onClick={togglePCSearchDropdown}
-                />
-                {PCSearchDropdown && filteredServices.length > 0 && (
-                  <div className="absolute bg-white border rounded-lg shadow-lg mt-2 max-h-60 overflow-y-auto z-50 w-full">
-                    {filteredServices.map((service, index) => (
-                      <Link
-                        key={index}
-                        href={`/collections/${service.toLowerCase().replace(/[\s,]+/g, "-")}`}
-                        className="block px-4 py-2 hover:bg-blue-100 cursor-pointer text-gray-700"
-                      >
-                        {service}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
+            <DesktopSearchBar
+              searchQuery={searchQuery}
+              handleSearch={handleSearch}
+              filteredServices={filteredServices}
+              PCSearchDropdown={PCSearchDropdown}
+              togglePCSearchDropdown={togglePCSearchDropdown}
+              searchBoxRef={searchBoxRef}
+            />
             <div className="flex justify-between items-center space-x-1">
               <button className="text-white md:hidden p-2 rounded-full hover:bg-gray-100 ">
                 <CiPhone className="w-6 h-6" />
@@ -143,32 +125,15 @@ const Navbar = () => {
           />
         </div>
       </div>
-      <div className="md:hidden px-4 py-2" ref={searchBoxRef}>
-        <div className="relative w-full">
-          <CiSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 w-6 h-6" />
-          <input
-            type="text"
-            placeholder="Search for services"
-            value={searchQuery}
-            onChange={handleSearch}
-            className="w-full pl-12 py-2 border cursor-pointer rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-            onClick={toggleSearchDropdown}
-          />
-        </div>
-        {searchDropdown && filteredServices.length > 0 && (
-          <div className="absolute bg-white border rounded-lg shadow-lg mt-2 max-h-60 overflow-y-auto z-5 w-[90%]">
-            {filteredServices.map((service, index) => (
-              <Link
-                key={index}
-                href={`/collections/${service.toLowerCase().replace(/[\s,]+/g, "-")}`}
-                className="block px-4 py-2 hover:bg-blue-100 cursor-pointer text-gray-700"
-              >
-                {service}
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
+      <MobileSearchBar
+        searchQuery={searchQuery}
+        handleSearch={handleSearch}
+        filteredServices={filteredServices}
+        searchDropdown={searchDropdown}
+        toggleSearchDropdown={toggleSearchDropdown}
+        searchBoxRef={searchBoxRef}
+        allServices={allServices}
+      />
 
       <div className="relative">
         {isMobileMenuOpen && (
